@@ -1,0 +1,623 @@
+.tournamentinfo-2 {
+  align-items: center;
+  background-color: var(--blackwhitewhite);
+  display: flex;
+  flex-direction: column;
+  /* overflow: hidden; */
+  position: relative;
+  width: 100%;
+}
+
+.wrap {
+  margin: 0px 13.55%;
+  width: 73%;
+}
+
+.title {
+  padding-top: 7.43%;
+  padding-bottom: 3.64%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 6.43%;
+}
+
+/* 탭 */
+.game_tab {
+  display: flex;
+  justify-content: center;
+}
+
+.tab {
+  /* line-height: 100%; */
+  width: 33.41%;
+  padding: 1.65% 0px;
+  text-align: center;
+  cursor: pointer;
+  background-color: #f5f6f6;
+}
+
+.tab:hover {
+  background-color: #fff;
+}
+
+.tab.active {
+  width: 33.41%;
+  border: 1px solid #ddd;
+  margin-bottom: -2px;
+  background-color: #fff;
+  border-bottom: 2px solid #fff;
+  position: relative;
+  z-index: 2;
+  color: #222222;
+  font-weight: 700;
+  /* 24.12.18 수정 - 추가 */
+  font-family: var(--font-family-pretendard-bold);
+}
+
+/* 대회정보  */
+.table_box {
+  border: 1px solid #ddd;
+  padding: 2.86%;
+  width: 100%;
+}
+
+.table_box table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table-row-align {
+  display: flex; /* 플렉스 박스 레이아웃으로 변경하여 한 줄에 표시 */
+  flex-wrap: nowrap; /* 한 줄에 모두 표시되도록 설정 */
+}
+
+.table-row-align td {
+  border: 0.5px solid #ddd;
+  padding: 1.4% 1.56%;
+  white-space: nowrap; /* 내용이 길 경우 줄바꿈되지 않고 한 줄로 유지 */
+}
+
+.store-count {
+  color: #184199;
+}
+.course-row {
+  height: auto; /* 대회코스 행만 자동 높이로 설정 */
+}
+
+.table_box tr td:nth-child(1),
+.table_box tr td:nth-child(3) {
+  background-color: #f4f4f4;
+  /* 24.12.18 수정 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.table_box tr td:nth-child(2),
+.table_box tr td:nth-child(4) {
+  width: 100%;
+}
+
+.s_button {
+  width: 120px;
+  height: 35px;
+  background-color: #184199;
+  color: #fff;
+  text-align: center;
+  margin-left: 12px;
+  font-size: 12px;
+  align-items: center;
+  border-radius: 3px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shop_name {
+  padding: 30px;
+  background-color: #f4f4f4;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.shop-location {
+  margin-right: 12px;
+  line-height: 160%;
+}
+
+.inline {
+  display: inline-block;
+  text-align: center;
+  margin-right: 10px;
+}
+
+.c_button {
+  width: 73px;
+  height: 24px;
+  font-size: 12px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  color: #fff;
+  margin-right: 10px;
+  margin-left: 10px;
+  background-color: #222;
+  border-radius: 3px;
+  font-family: "Pretendard-Regular";
+}
+
+.status-ongoing {
+  color: #d30f1a;
+}
+
+.status-recruiting {
+  color: #184199;
+}
+
+.status-ended {
+  color: #222222;
+}
+.condition-col {
+  display: flex;
+}
+/* 24.11.22 수정 - 추가 */
+.slash {
+  margin-left: 10px;
+}
+
+.button {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  /* 24.12.10 수정 - 추가 */
+  gap: 20px;
+}
+
+.button div {
+  width: 15.16%;
+  height: 50px;
+  display: flex;
+  /* background-color: #999; */
+  justify-content: center;
+  align-items: center;
+}
+
+/* .button div:nth-child(2) {
+  background-color: #d30f1a;
+  margin-left: 20px;
+} */
+
+/* 24.12.10 수정 - 추가 */
+.button div:hover {
+  opacity: 0.8;
+}
+
+/* 순위표 */
+
+.ranking_box {
+  padding: 40px;
+  border: 1px solid #ddd;
+}
+.ranking-container {
+  display: none;
+}
+.ranking-table {
+  border-collapse: separate;
+  width: 100%;
+  border-spacing: 0;
+  overflow: hidden;
+}
+
+.ranking-table th,
+.ranking-table td {
+  text-align: center;
+  padding: 20px 0px;
+}
+
+.ranking-table tr {
+  width: 100%;
+}
+
+.ranking-table th {
+  width: 17.5%;
+  background-color: #f5f6f6;
+}
+
+.ranking-table td {
+  border-bottom: 0.5px solid #cccccc;
+  color: #666;
+}
+
+.ranking-details {
+  background-color: #184199;
+  padding: 4px 12px;
+  text-align: center;
+  height: 32px;
+  border-radius: 90px;
+  width: 80%;
+}
+
+.nickname-col {
+  display: flex;
+  margin-left: 10%;
+  gap: 8%;
+  align-items: center;
+}
+
+.profile-img {
+  width: 30px;
+  height: 30px;
+  /* 24.12.24 수정 - 추가 */
+  border-radius: 20px;
+}
+
+/* 24.11.14 수정 - 추가 */
+.pagination-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+  margin-bottom: 0 !important;
+}
+
+/* 24.11.14 수정 - 추가 */
+.pagination-arrow {
+  cursor: pointer;
+}
+
+/* 24.11.14 수정 - 추가 */
+.pagination-arrow.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* 24.11.14 수정 - 추가 */
+.pagination-arrow.flipped {
+  transform: rotate(180deg);
+}
+
+/* 24.11.14 수정 - 추가 */
+.page-number.active {
+  background-color: #d30f1a;
+  color: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 24.11.14 수정 - 추가 */
+.page-numbers {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+/* 24.11.14 수정 - 추가 */
+.page-number {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #eeeeee;
+  cursor: pointer;
+}
+
+/* 24.11.14 수정 - 추가 */
+.page-number:hover {
+  background-color: #eeeeee;
+}
+
+/* 대회이미지 */
+.img_box {
+  border: 0.5px solid #ddd;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 80px;
+}
+
+.image-container {
+  width: 100%;
+  position: relative;
+}
+
+.image-container img {
+  width: 100%;
+}
+
+/* 720px 이하일 때 모바일 버전 */
+@media only screen and (max-width: 720px) {
+  .wrap {
+    width: 100%;
+    max-width: 720px;
+    min-width: 360px;
+    height: 100%;
+  }
+
+  .tournamentinfo-2 {
+    width: 100%;
+    max-width: 720px;
+    min-width: 360px;
+    height: 100%;
+  }
+
+  .title {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+    padding: 8.5%;
+    margin-top: 3%;
+  }
+
+  .content {
+    width: 100%;
+  }
+  .game_tab {
+    width: 100%;
+  }
+  .tab {
+    width: 28.9%;
+    font-size: 14px;
+    border-bottom: 1px solid #ddd;
+    padding: 4.5% 0;
+  }
+
+  .tab:active {
+    font-weight: 700;
+  }
+
+  .card_box {
+    width: 100%;
+    padding: 5.56%;
+  }
+  .table_box {
+    width: 100%;
+    border: none;
+    padding: 0;
+  }
+
+  .table_box table {
+    width: 100%;
+  }
+  .table-row-align {
+    display: flex;
+    flex-direction: column;
+    /* 24.12.18 수정 */
+    align-items: flex-start;
+  }
+
+  .table-row-align td {
+    border: none;
+    /* white-space: wrap; */
+    /* 24.11.22 수정 - 추가 */
+    display: flex;
+    align-items: center;
+  }
+
+  /* 24.12.18 수정 - 추가 */
+  .flex-start-align {
+    display: flex;
+    align-items: flex-start !important; /* 수직 정렬을 flex-start로 설정 */
+    text-align: left; /* 텍스트 왼쪽 정렬 */
+  }
+
+  .table_box tr td:nth-child(1),
+  .table_box tr td:nth-child(3) {
+    background-color: #fff;
+  }
+
+  .table-row-title {
+    margin-top: 6.6%;
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .table-row-content {
+    /* font-size: 14px; */
+    /* 24.12.18 수정 */
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .status-font {
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  .store-font {
+    font-size: 16px;
+    /* 24.12.18 수정- 추가  */
+    display: grid !important;
+    justify-items: start;
+    align-items: center !important;
+  }
+
+  .shop_name {
+    padding: 4.9% 2.8%;
+    width: 100%;
+    border-radius: 0;
+    /* 24.12.18 수정 - 추가 */
+    margin-top: 10px;
+  }
+
+  /* 24.12.18 수정 - 추가  */
+  .s_button {
+    font-size: 12px;
+  }
+
+  .shop-location {
+    font-size: 14px;
+    font-weight: 500;
+    color: #666;
+  }
+  .shop-address {
+    display: none;
+  }
+
+  .course-row {
+    display: flex;
+  }
+
+  .course-col {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    gap: 1.8%;
+    white-space: nowrap;
+  }
+
+  .inline {
+    color: #666;
+    font-size: 14px;
+    width: 100%;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 3%;
+    /* 24.11.22 수정 - 추가 */
+    margin-right: 0;
+  }
+
+  .c_button {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .slash {
+    display: none;
+  }
+
+  .option-title {
+    font-size: 14px;
+    color: #666;
+  }
+
+  .option-content {
+    font-size: 16px;
+    padding-right: 5%;
+    color: #222;
+    /* 24.12.18 수정 - 추가 */
+    font-family: var(--font-family-pretendard-medium);
+  }
+
+  .condition-col {
+    display: flex;
+    font-size: 14px;
+    color: #666;
+    white-space: nowrap;
+    text-align: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .condition-item {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+  }
+
+  .add-text {
+    font-size: 14px;
+  }
+
+  .button {
+    width: 100%;
+    gap: 4%;
+  }
+
+  .button div {
+    width: 49%;
+    height: 40px;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-bottom: 46%;
+  }
+
+  .button div:nth-child(2) {
+    margin-left: 0;
+  }
+
+  /* 순위표 탭 */
+  .ranking_box {
+    border: none;
+    padding: 0;
+  }
+  .ranking-table {
+    display: none;
+  }
+
+  .ranking-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 10.7%;
+  }
+
+  .ranking-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    gap: 10px; /* 카드 내부 요소 사이의 간격 */
+  }
+
+  .ranking-card-row-1 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5.56%;
+  }
+
+  .profile-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .ranking-card-row-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .ranking-card-row-3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6.26% 0;
+  }
+  .ranking-details {
+    width: 31.3%;
+    height: 30px;
+    text-align: center;
+    border-radius: 90px;
+    cursor: pointer;
+    border: none;
+    align-self: flex-start;
+  }
+
+  /* 24.11.14 수정 - 추가 */
+  .pagination-controls {
+    gap: 10px;
+  }
+
+  /* 대회이미지 탭 */
+  .img_box {
+    padding: 5.6%;
+    border: none;
+    margin-bottom: 14.5%;
+  }
+}

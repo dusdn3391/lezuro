@@ -1,0 +1,76 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR:500,400,300");
+/* The following line is used to measure usage of this code. You can remove it if you want. */
+@import url("https://px.animaapp.com/66a7651605119c84aef8c388.66a7651605119c84aef8c38b.tkvfOFG.vcp.png");
+
+@font-face {
+  font-family: "Pretendard-Bold";
+  font-style: normal;
+  font-weight: 700;
+  src: url("https://anima-uploads.s3.amazonaws.com/projects/5f06a5517739f30d3a8fc967/fonts/pretendard-bold.otf")
+    format("opentype");
+}
+@font-face {
+  font-family: "Pretendard-Medium";
+  font-style: normal;
+  font-weight: 500;
+  src: url("https://anima-uploads.s3.amazonaws.com/projects/652c3450456268e27eebc9fd/fonts/gothica1-bold.ttf")
+    format("truetype");
+}
+@font-face {
+  font-family: "Pretendard-SemiBold";
+  font-style: normal;
+  font-weight: 600;
+  src: url("https://anima-uploads.s3.amazonaws.com/projects/6122f3f935181493bb5c6c35/fonts/pretendard-semibold.otf")
+    format("opentype");
+}
+@font-face {
+  font-family: "Pretendard-Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://anima-uploads.s3.amazonaws.com/projects/66d7c29223ea06abf5a042ec/fonts/pretendard-regular.woff")
+    format("woff");
+}
+@font-face {
+  font-family: "Pretendard-Light";
+  font-style: normal;
+  font-weight: 300;
+  src: url("https://anima-uploads.s3.amazonaws.com/projects/652446fe8f427b0cdbc0a73d/fonts/pretendard-light.otf")
+    format("opentype");
+}
+@font-face {
+  font-family: "Pretendard-ExtraBold";
+  font-style: normal;
+  font-weight: 800;
+  src: url("https://anima-uploads.s3.amazonaws.com/projects/6122f3f935181493bb5c6c35/fonts/pretendard-extrabold.otf")
+    format("opentype");
+}
+
+
+.screen a {
+  display: contents;
+  text-decoration: none;
+}
+
+.container-center-horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  pointer-events: none;
+  width: 100%;
+}
+
+.container-center-horizontal > * {
+  flex-shrink: 0;
+  pointer-events: auto;
+}
+
+.valign-text-middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+* {
+  box-sizing: border-box;
+}

@@ -1,0 +1,195 @@
+.swingwrite-2 {
+  align-items: center;
+  background-color: var(--blackwhitewhite);
+  display: flex;
+  flex-direction: column;
+  /* min-height: 1492px; */
+  height: 100%;
+  position: relative;
+  /* width: 1920px; */
+  width: 100%;
+}
+
+.title {
+  padding: 0px 13.5%;
+  padding-top: 104px;
+  width: 100%;
+}
+
+.frame-7782-1 {
+  margin-bottom: 140px;
+  width: 100%;
+  padding: 0px 13.5%;
+  border: none;
+}
+
+.frame-7857-7 {
+  width: 100%;
+  padding: 40px;
+  border: 1px solid #dddddd;
+  margin-top: 44px;
+}
+
+.title-box,
+.content-box {
+  align-items: center;
+  align-self: stretch;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-color: var(--celeste);
+  border-top-style: solid;
+  border-top-width: 1px;
+  display: flex;
+  flex: 0 0 auto;
+  padding: 20px 20px 20px 0px;
+  position: relative;
+  width: 100%;
+}
+
+.content-title {
+  /* align-items: center; */
+  /* 24.12.19 수정 */
+  align-items: flex-start;
+  display: flex;
+  gap: 10px;
+  padding: 0px 0px 0px 20px;
+  position: relative;
+  width: 150px;
+}
+
+.frame-7281-8 {
+  background-color: #fafafa;
+  padding: 20px;
+  width: 100%;
+  border: 0.5px solid #ddd;
+  /* 24.12.19 수정 - 추가 */
+  height: 50px;
+}
+
+/* 24.11.11 수정 - border 겹치는 부분 수정 */
+.content-box {
+  border: none;
+}
+
+/* 24.11.11 수정 -  placeholder 색 변경 */
+input::placeholder,
+textarea::placeholder {
+  color: #999;
+}
+
+.frame-7281-9 {
+  background-color: #fafafa;
+  padding: 20px;
+  width: 100%;
+  border: 0.5px solid #ddd;
+  /* 24.12.19 수정 */
+  height: 220px;
+  resize: none;
+}
+
+.frame-7487-4 {
+  align-items: center;
+  background-color: var(--hint-of-red);
+  border: 0.5px solid;
+  border-color: var(--celeste);
+  display: flex;
+  gap: 10px;
+  height: 55px;
+  padding: 0px 20px;
+  position: relative;
+  width: 100%;
+}
+
+/* 24.12.19 수정 - 추가  */
+.frame-7487-4 input {
+  width: 100%;
+}
+
+.frame-7859-3 {
+  top: 20px;
+  justify-content: center;
+  display: flex;
+  gap: 10px;
+  margin-top: 50px;
+  width: 100%;
+}
+
+/* 24.12.19 수정 */
+.cancel-btn,
+.submit-btn {
+  align-items: center;
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  width: 200px;
+  border: none;
+}
+
+/* 24.12.19 수정 - 추가 */
+.cancel-btn {
+  background-color: #999;
+}
+
+/* 24.12.19 수정 */
+.submit-btn {
+  background-color: #d30f1a;
+}
+
+@media (max-width: 720px) {
+  /* 24.12.19 수정 - 추가 */
+  .swingwrite-2 {
+    width: 100%;
+    max-width: 720px;
+    min-width: 360px;
+    height: 100%;
+  }
+
+  .title {
+    text-align: center;
+    font-size: 18px;
+    padding-top: 40px;
+  }
+  .frame-7782-1 {
+    padding: 20px;
+  }
+
+  .frame-7857-7 {
+    border: none;
+    padding: 0px;
+    margin-top: 0px;
+  }
+
+  .title-box,
+  .content-box {
+    border: none;
+    display: block;
+    padding: 0px;
+  }
+
+  .content-box {
+    display: block;
+  }
+
+  .content-title {
+    align-items: flex-start;
+    margin-bottom: 17.5px;
+    margin-top: 27.5px;
+    padding: 0px;
+  }
+
+  /* 24.12.19 수정 - 추가 */
+  .cancel-btn,
+  .submit-btn {
+    width: 50%;
+    border-radius: 4px;
+    height: 40px;
+    font-size: 14px;
+  }
+
+  .frame-7859-3 {
+    margin-top: 30px;
+  }
+  .frame-7782-1 {
+    margin-bottom: 91px;
+  }
+}

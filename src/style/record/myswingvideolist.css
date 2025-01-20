@@ -1,0 +1,342 @@
+/* 24.11.14 수정 */
+.myswingvideos-2 {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+  width: 100%;
+}
+
+/* 24.11.14 수정 - 추가*/
+.title {
+  width: 73.5%;
+  padding-top: 5.42%;
+  padding-bottom: 2.66%;
+}
+
+/* 24.11.14 수정 - 추가 */
+.swingvideo {
+  /* padding: 0px 13.5%;
+  width: 100%;
+  margin-bottom: 100px; */
+  display: grid;
+  gap: 50px;
+  justify-items: center;
+  margin-top: 1.6%;
+  margin-bottom: 6.7%;
+  position: relative;
+  width: 73%;
+}
+
+/* 24.11.14 수정 - 정렬 수정 */
+.row {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, auto);
+  /* display: flex; */
+  /* justify-content: flex-start; */
+  margin-bottom: 20px;
+  gap: 40px;
+}
+
+/* 24.11.14 수정 - 정렬 수정 */
+.column {
+  display: grid;
+  width: 100%;
+  /* align-items: center; */
+  /* display: flex; */
+  /* flex-direction: column; */
+  gap: 20px;
+  position: relative;
+  /* width: 320px; */
+}
+
+/* 24.11.14 수정 - width, height 수정 */
+.group-762-7 {
+  /* background-image: url(https://cdn.animaapp.com/projects/66da512d0c22d478015e0e07/releases/66da51d8cf50153cef9952df/img/mask-group-107@2x.png); */
+  background-size: 100% 100%;
+  border-radius: 20px;
+  /* height: 320px; */
+  position: relative;
+  /* width: 320px; */
+  position: relative;
+  width: 100%;
+  height: 300px;
+}
+
+.vector-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 77px;
+  /* 원하는 이미지 크기로 조절 */
+  height: 77px;
+}
+
+/* 영상 css */
+.corner-vector {
+  position: absolute;
+  top: 20px;
+  /* 왼쪽 모퉁이 위치 조정 */
+  left: 20px;
+  width: 17px;
+  /* 너비를 17px로 설정 */
+}
+
+/* 24.11.14 수정 - width 수정, height, position 삭제 */
+.group-761 {
+  /* height: 107px;
+  position: relative;
+  width: 302px; */
+  width: 100%;
+  display: grid;
+  gap: 10px;
+}
+
+/* .flex-col-40 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  left: 0;
+  min-height: 107px;
+  position: absolute;
+  top: 0;
+  width: 104px;
+} */
+
+/* 24.11.14 수정 - width 수정 */
+.frame-7656 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+  /* width: 104px; */
+  width: 100%;
+}
+
+/* 24.11.14 수정 - 전반적인 수정 */
+.text-259 {
+  /* align-self: stretch;
+  letter-spacing: 0;
+  line-height: 28px;
+  margin-top: -1px;
+  position: relative; */
+  display: -webkit-box; /* 플렉스 컨테이너로 설정 */
+  -webkit-box-orient: vertical; /* 수직으로 텍스트 정렬 */
+  -webkit-line-clamp: 1; /* 최대 줄 수를 3줄로 제한 */
+  overflow: hidden; /* 넘치는 텍스트를 숨김 */
+  text-overflow: ellipsis; /* 넘치는 부분에 ... 표시 */
+  word-wrap: break-word; /* 단어를 줄바꿈 */
+  line-height: 1.4; /* 줄 간격 */
+  height: calc(1.4em * 1); /* 최대 높이 설정 (줄 간격 * 줄 수) */
+}
+
+/* 24.11.14 수정 - 전반적인 수정 */
+.x1960m-1 {
+  /* align-self: stretch;
+  letter-spacing: 0;
+  line-height: 25.2px;
+  position: relative; */
+  display: -webkit-box; /* 플렉스 컨테이너로 설정 */
+  -webkit-box-orient: vertical; /* 수직으로 텍스트 정렬 */
+  -webkit-line-clamp: 2; /* 최대 줄 수를 2줄로 제한 */
+  overflow: hidden; /* 넘치는 텍스트를 숨김 */
+  text-overflow: ellipsis; /* 넘치는 부분에 ... 표시 */
+  word-wrap: break-word; /* 단어를 줄바꿈 */
+  line-height: 1.4; /* 줄 간격 */
+  height: calc(1.4em * 2); /* 최대 높이 설정 (줄 간격 * 줄 수) */
+}
+
+.date-btn-align {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* 24.12.17 수정 - 추가  */
+.date-align {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+/* .date-28 {
+  height: 20px;
+  letter-spacing: 0;
+  line-height: 19.6px;
+  white-space: nowrap;
+} */
+
+/* .frame-7655-2 {
+  height: 40px;
+  left: 260px;
+  position: absolute;
+  top: 62px;
+  width: 40px;
+} */
+
+.pagination-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.pagination-arrow {
+  width: 30px;
+  cursor: pointer;
+}
+
+.pagination-arrow.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* 24.11.21 수정 - 정렬 수정 */
+.page-numbers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.page-number {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  /* 24.11.14 수정 - 색상 변경 */
+  background-color: #eeeeee;
+  cursor: pointer;
+}
+
+.page-number.active {
+  background-color: #d30f1a;
+  color: white;
+}
+
+.page-number:hover {
+  background-color: #ddd;
+}
+
+.pagination-arrow.flipped {
+  transform: rotate(180deg);
+}
+
+@media (max-width: 720px) {
+  /* 24.11.14 수정 - 추가 */
+  .myswingvideos-2 {
+    width: 100%;
+    max-width: 720px;
+    min-width: 360px;
+    height: 100%;
+  }
+
+  .title {
+    /* 24.11.14 수정 */
+    padding-top: 40px;
+    text-align: center;
+    font-size: 18px;
+    /* 24.12.17 수정 - 추가  */
+    padding-bottom: 30px;
+  }
+
+  /* 24.11.14 수정 */
+  .swingvideo {
+    width: 100%;
+    padding: 0 20px;
+    gap: 10px;
+  }
+
+  /* 24.11.14 수정 */
+  .row {
+    gap: 20px;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, auto);
+  }
+
+  .group-762-7 {
+    width: 155px;
+    height: 155px;
+    /* 24.11.14 수정 - 추가 */
+    border-radius: 10px;
+  }
+
+  /* 24.11.14 수정 - height 추가 */
+  .vector-img {
+    width: 50px;
+    height: 50px;
+  }
+
+  /* 24.11.14 수정 - 추가 */
+  .corner-vector {
+    top: 10px;
+    /* 왼쪽 모퉁이 위치 조정 */
+    left: 10px;
+    width: 14px;
+    /* 너비를 17px로 설정 */
+  }
+
+  .group-761 {
+    width: 155px;
+  }
+
+  /* 24.11.14 수정 - 추가 : 글자 넘치면 ... 출력 */
+  .text-259 {
+    font-size: 18px;
+    -webkit-line-clamp: 1; /* 최대 줄 수를 3줄로 제한 */
+    height: calc(1.4em * 1); /* 최대 높이 설정 (줄 간격 * 줄 수) */
+  }
+
+  /* 24.12.17 수정 - 추가  */
+  .x1960m-1 {
+    font-size: 14px;
+  }
+
+  /* 24.12.17 수정 - 추가  */
+  .date-btn-align {
+    font-size: 12px;
+  }
+
+  /* 24.12.17 수정 - 추가  */
+  .date-align {
+    display: grid;
+    gap: 5px;
+  }
+
+  /* 24.12.17 수정 - 추가 */
+  .date-btn-align img {
+    width: 30px;
+    height: 30px;
+  }
+
+  /* 24.11.14 수정 - 추가 */
+  .pagination-controls {
+    width: 100%;
+    /* margin-top: 30px; */
+    /* 24.12.17 수정  */
+    margin-bottom: 128px;
+    /* 24.12.17 수정 - 추가  */
+    gap: 30px;
+  }
+
+  /* 24.12.17 수정 - 추가  */
+  .page-numbers {
+    gap: 12px;
+  }
+
+  /* 24.12.17 수정 - 추가  */
+  .page-number {
+    width: 30px;
+    height: 30px;
+  }
+}

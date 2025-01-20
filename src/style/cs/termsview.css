@@ -1,0 +1,136 @@
+.terms-2 {
+    background-color: var(--blackwhitewhite);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+  }
+  
+  .terms_title {
+    width: 100%;
+    padding: 0px 13.5%;
+    margin-top: 104px;
+  }
+  
+  .terms_view {
+    margin-bottom: 160px;
+  }
+  
+  .tab-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    padding: 0px 13.5%;
+    width: 100%;
+  }
+  
+  /* 24.12.20 수정 */
+  .tab-btn {
+    /* line-height: 100%; */
+    width: 33.333%;
+    padding: 23px 0px;
+    text-align: center;
+    cursor: pointer;
+    /* color: #666666; */
+    background-color: #f5f6f6;
+  }
+  
+  .tab-btn:hover {
+    background-color: #fff;
+  }
+  
+  .tab-btn.active {
+    width: 33.333%;
+    border: 1px solid #ddd;
+    margin-bottom: -2px;
+    background-color: #fff;
+    border-bottom: 2px solid #fff;
+    /* position: relative;
+    z-index: 2; */
+    color: #222222;
+    /* 24.12.20 수정 - 추가 */
+    font-family: var(--font-family-pretendard-bold);
+    font-weight: 700;
+  }
+  
+  .terms {
+    margin: 0px 13.5%;
+    border: 1px solid #ddd;
+    /* 24.12.20 수정 - 추가 */
+    padding: 20px;
+  }
+  
+  .termsview {
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* 24.12.20 수정  */
+  .lorem-ipsum-dolor-si-11 {
+    /* letter-spacing: 0; */
+    line-height: 28px;
+    /* margin-top: -1px; */
+    /* position: relative; */
+    width: 100%;
+  }
+  
+  /* 24.12.05 수정 - 추가: 줄바꿈 인식 */
+  .termsview p {
+    white-space: pre-line; /* 줄바꿈 문자(\n) 인식 */
+  }
+  
+  @media (max-width: 720px) {
+    /* 24.12.20 수정 - 추가 */
+    .terms-2 {
+      width: 100%;
+      max-width: 720px;
+      min-width: 360px;
+      height: 100%;
+    }
+  
+    /* 24.12.20 수정 - 추가  */
+    .terms_wrap {
+      margin-bottom: 80px;
+    }
+  
+    .terms_title {
+      padding: 20px;
+      text-align: center;
+      font-size: 18px;
+      /* 24.12.20 수정 - 추가 */
+      padding-top: 40px;
+      padding-bottom: 30px;
+      margin-top: 0;
+    }
+  
+    /* 24.12.20 수정 */
+    .terms_view {
+      margin-bottom: 30px;
+      padding: 0px 20px;
+    }
+  
+    /* 24.12.20 수정 */
+    .tab-container {
+      padding: 0;
+      height: 50px;
+      margin-top: 0;
+    }
+  
+    /* 24.12.20 수정 */
+    .tab-btn {
+      font-size: 14px;
+      font-family: var(--font-family-pretendard-regular);
+    }
+  
+    /* 24.12.20 수정 - 추가 */
+    .terms {
+      margin: 0;
+      padding: 0 20px;
+    }
+  
+    /* 24.12.20 수정 - 추가 */
+    .terms_view {
+      padding-bottom: 0;
+    }
+  }
+  

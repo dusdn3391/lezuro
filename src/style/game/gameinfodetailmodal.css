@@ -1,0 +1,281 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  /* 불투명한 블랙 배경 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  /* 모달을 다른 요소 위에 표시 */
+}
+
+.game-info-detail-modal-wrap {
+  align-items: flex-start;
+  background-color: var(--blackwhitewhite);
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  position: relative;
+  /* 24.12.27 수정 - 추가 */
+  border-radius: 20px;
+  overflow-y: auto;
+  height: 100%;
+}
+
+.game-info-detail-modal-title {
+  align-items: center;
+  align-self: stretch;
+  border-bottom: 0.5px solid #ddd;
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: space-between;
+  padding: 0px 0px 30px;
+  position: relative;
+  width: 100%;
+}
+
+.material-symbolsclose-3 {
+  height: 24px;
+  position: relative;
+  width: 24px;
+}
+
+.game-info-detail-modal-content {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+}
+
+.game-info-detail-modal-content-head {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  gap: 10px;
+  height: 70px;
+  position: relative;
+  width: 100%;
+}
+
+.game-info-detail-modal-content-title-align {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  height: 40px;
+  position: relative;
+}
+
+.game-info-detail-modal-profile-image {
+  height: 26px;
+  position: relative;
+  width: 26px;
+  /* 24.12.26 수정 - 추가 */
+  border-radius: 20px;
+}
+
+.game-info-detail-modal-content-body {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 12px;
+  position: relative;
+  width: 100%;
+}
+
+.table-container {
+  display: none;
+}
+
+.table {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  border: none;
+  /* 24.12.24 수정 - 추가 */
+  /* border: 0.5px solid #ddd;
+  border-bottom: none; */
+}
+
+.table-item {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  height: 50px;
+  position: relative;
+  width: 100%;
+  border-right: 0;
+}
+
+.game-info-detail-modal-content-info {
+  align-self: stretch;
+  height: 150px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  /* 24.12.24 수정 */
+  border: 0.5px solid #ddd;
+}
+
+.table-item-content {
+  align-items: center;
+  border-right: 0;
+  border-bottom: 0.5px solid #ddd;
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  position: relative;
+  width: 41.3%;
+  /* 24.12.26 수정 - 추가 */
+  flex-direction: column;
+  gap: 5px;
+}
+
+.table-item-title {
+  border-right: 0;
+  border-bottom: 0.5px solid #ddd;
+  width: 24.4%;
+  background-color: #f4f4f4;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.score-card {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 10px;
+}
+
+th,
+td {
+  padding: 23.5px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #f5f5f5;
+}
+
+@media only screen and (max-width: 720px) {
+  .modal-overlay {
+    padding: 20px;
+  }
+  .game-info-detail-modal-wrap {
+    width: 100%;
+    height: 100%;
+    padding: 6.26%;
+    /* 24.12.26 수정 - 추가 */
+    overflow-y: auto;
+    border-radius: 0;
+  }
+
+  .game-info-detail-modal-title {
+    padding-bottom: 4%;
+  }
+
+  .game-info-detail-modal-title-font {
+    font-size: 18px;
+  }
+
+  .game-info-detail-modal-content-head {
+    height: 60px;
+  }
+  .game-info-detail-modal-profile-image {
+    width: 20px;
+    /* 24.12.27 수정 - 추가 */
+    height: 20px;
+  }
+
+  .game-info-detail-modal-profile-name {
+    font-size: 14px;
+    font-weight: 700;
+  }
+  .game-info-detail-modal-content-body {
+    justify-content: space-between;
+  }
+  .game-info-detail-modal-content-info {
+    height: 240px;
+    border: none;
+    border-top: 0.5px solid #ddd;
+    /* border-bottom: 0.5px solid #ddd; */
+  }
+  .table {
+    display: none;
+  }
+  .table-container {
+    width: 100%;
+    display: grid;
+  }
+  .table-container-row {
+    display: flex;
+    align-items: center;
+    border-bottom: 0.5px solid #ddd;
+    /* height: 40px; */
+  }
+  .table-item-title-font {
+    font-size: 14px;
+  }
+  .table-item-content {
+    justify-content: flex-start;
+    padding: 4.1%;
+    /* 24.12.26 수정 - 추가 */
+    align-items: flex-start;
+  }
+  .table-item-title,
+  .table-item-content {
+    border: none;
+    height: 100%;
+  }
+  .table-item {
+    flex-direction: column;
+    border: none;
+    height: 40px;
+  }
+
+  .score-card-wrapper {
+    width: 100%;
+    overflow-x: auto; /* 가로 스크롤 허용 */
+  }
+
+  .score-card table {
+    min-width: 720px; /* 최소 너비 설정 */
+    width: 100%; /* 기본적으로 100% 너비 사용 */
+    border-collapse: collapse;
+  }
+
+  th,
+  td {
+    padding: 15px;
+  }
+
+  .par-col {
+    background-color: #f4f4f4;
+    font-size: 14px;
+  }
+  .sum-font {
+    font-size: 14px;
+  }
+  .score-font,
+  .puts-font {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "vue-package",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "vue-cli-service serve",
+    "build": "vue-cli-service build"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.686.0",
+    "@googlemaps/js-api-loader": "^1.16.8",
+    "aws-sdk": "^2.1691.0",
+    "axios": "^1.7.7",
+    "chart.js": "^3.9.1",
+    "core-js": "^3.6.5",
+    "crypto-js": "^4.2.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "vue": "^2.6.11",
+    "vue-chartjs": "^4.1.2",
+    "vue-router": "^3.6.5"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "vue-template-compiler": "^2.6.11"
+  }
+}

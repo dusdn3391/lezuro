@@ -1,0 +1,459 @@
+.courses-2 {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+  width: 100%;
+}
+
+.title {
+  width: 73.5%;
+  padding-top: 5.42%;
+  padding-bottom: 2.66%;
+}
+
+.select-box {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 1.57%;
+  position: relative;
+  width: 73%;
+  height: 120px;
+  background-color: var(--cultured-pearl);
+  border-radius: 5px;
+  flex-wrap: wrap;
+}
+
+.select-align {
+  display: flex;
+  width: 38%;
+  gap: 20px;
+}
+
+.select-style {
+  background-color: #fff;
+  width: 50%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding: 0px 1.5%;
+}
+
+.select-text {
+  border: none;
+  color: #333;
+}
+
+/* 24.11.20 수정 */
+select {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border: none;
+}
+
+.input-style {
+  background-color: #fff;
+  width: 60%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding: 0px 1.5%;
+}
+
+.input-text {
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  width: 100%;
+  /* input이 가로로 차지하는 공간을 맞춤 */
+  background: none;
+  border: none;
+  font-size: inherit;
+  outline: none;
+}
+
+.search-btn-10 {
+  height: 24px;
+  position: relative;
+  width: 24px;
+}
+
+/* 24.11.22 수정 */
+.course-content {
+  display: grid;
+  /* gap: 50px; */
+  justify-items: center;
+  /* border: 1px solid #ddd; */
+  /* margin-top: 1.6%; */
+  margin-bottom: 6.7%;
+  /* padding: 40px; */
+  padding-bottom: 40px;
+  position: relative;
+  width: 73%;
+}
+
+/* 24.11.22 수정 - 추가 */
+.game_tab {
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+/* 24.11.22 수정 - 추가 */
+.tab {
+  line-height: 100%;
+  width: 50%;
+  padding: 23px 0px;
+  text-align: center;
+  cursor: pointer;
+  background-color: #f5f6f6;
+}
+
+/* 24.11.22 수정 - 추가 */
+.tab:hover {
+  background-color: #fff;
+}
+
+/* 24.11.22 수정 - 추가 */
+.tab.active {
+  border: 1px solid #ddd;
+  margin-bottom: -2px;
+  border-bottom: 2px solid #fff;
+  background-color: #fff;
+  position: relative;
+  z-index: 2;
+  font-weight: 700;
+  color: #222;
+}
+
+/* 24.11.22 수정 - 추가 */
+.courses-list-paging-align {
+  width: 100%;
+  display: grid;
+  gap: 50px;
+  padding-bottom: 50px;
+  border: 1px solid #ddd;
+}
+
+.courses-list {
+  display: grid;
+  width: 100%;
+  padding: 40px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 40px;
+}
+
+.course-card {
+  display: grid;
+  position: relative;
+  width: 100%;
+  /* 24.11.18 수정 - 추가 */
+  border: 1px solid #ddd;
+  border-radius: 20px;
+}
+
+.course-img {
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 250px;
+  position: relative;
+  width: 100%;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.course-card-foot {
+  display: grid;
+  justify-items: start;
+  /* 24.11.18 수정 */
+  border-top: 1px solid #ddd;
+  /* border-top: none; */
+  /* border-radius: 0px 0px 20px 20px; */
+  gap: 30px;
+  padding: 35px 30px;
+  position: relative;
+  width: 100%;
+}
+
+.course-info {
+  display: grid;
+  justify-items: start;
+  gap: 30px;
+  position: relative;
+  width: 100%;
+}
+
+.course-name {
+  width: 100%;
+}
+
+.course-info-detail {
+  display: grid;
+  gap: 15px;
+  width: 100%;
+}
+
+.course-info-first {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.course-info-detail-align {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.course-info-end {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 4px;
+}
+
+.course-rating-stars {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.course-red-star {
+  color: #d30f1a;
+}
+
+.course-gray-star {
+  color: #ddd;
+}
+
+.pagination-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 0 !important;
+}
+
+.pagination-arrow {
+  cursor: pointer;
+}
+
+.pagination-arrow.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.pagination-arrow.flipped {
+  transform: rotate(180deg);
+}
+
+/* .page-number.active {
+  background-color: #d30f1a;
+  color: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+.page-numbers {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.page-number {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #eeeeee;
+  cursor: pointer;
+}
+
+/* 24.11.18 수정 */
+.page-number.active {
+  background-color: #d30f1a;
+  color: white;
+}
+
+.page-number:hover {
+  background-color: #eeeeee;
+}
+
+/* 720px 이하일 때 모바일 버전 */
+@media only screen and (max-width: 720px) {
+  .courses-2 {
+    width: 100%;
+    max-width: 720px;
+    min-width: 360px;
+    height: 100%;
+  }
+
+  .title {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+    padding: 8.5%;
+    margin-top: 3%;
+  }
+
+  .select-box {
+    background-color: #fff;
+    width: 100%;
+    padding: 0 20px;
+    gap: 6px;
+  }
+
+  .select-align {
+    width: 100%;
+    gap: 10px;
+  }
+
+  .select-style,
+  .input-style {
+    width: 100%;
+    border: 1px solid #ddd;
+    height: 54px;
+    padding: 22px 15px;
+  }
+
+  .select-text,
+  .input-text {
+    width: 100%;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .select-text option {
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  /* 24.11.14 수정 - 정렬 수정 */
+  .course-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    width: 100%;
+    /* padding: 20px; */
+    /* 24.12.18 수정  */
+    padding: 0 20px;
+    margin-top: 2.8%;
+    margin-bottom: 36.2%;
+  }
+
+  /* 24.12.18 수정 - 추가 */
+  .game_tab {
+    margin-top: 0;
+  }
+
+  /* 24.12.18 수정 - 추가 */
+  .tab {
+    font-size: 14px;
+  }
+
+  /* 24.12.18 수정 - 추가 */
+  .courses-list-paging-align {
+    border: none;
+  }
+
+  .courses-list {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 10px;
+    /* 24.12.18 수정 - 추가 */
+    padding: 30px 0;
+  }
+
+  /* 24.12.18 수정 - 추가 */
+  .course-card {
+    /* width: 48.44%; */
+    border: none;
+  }
+
+  .course-img {
+    width: 155px;
+    height: 155px;
+    border-radius: 20px;
+  }
+
+  /* 24.11.14 수정 - padding 수정 */
+  .course-card-foot {
+    padding: 10px 5px;
+    gap: 12px;
+    border: none;
+  }
+
+  .course-name {
+    font-size: 18px;
+     /* 24.12.18 수정 - 추가 : 제목 넘칠 때 ... 로 설정*/
+     display: -webkit-box; /* 플렉스 컨테이너로 설정 */
+     -webkit-box-orient: vertical; /* 수직으로 텍스트 정렬 */
+     -webkit-line-clamp: 1; /* 최대 줄 수를 1줄로 제한 */
+     overflow: hidden; /* 넘치는 텍스트를 숨김 */
+     text-overflow: ellipsis; /* 넘치는 부분에 ... 표시 */
+     word-wrap: break-word; /* 단어를 줄바꿈 */
+     line-height: 1.4; /* 줄 간격 */
+     height: calc(1.4em * 1); /* 최대 높이 설정 (줄 간격 * 줄 수) */
+  }
+
+  .course-info-detail {
+    gap: 12px;
+  }
+  .course-info-first,
+  .course-info-end {
+    font-size: 12px;
+  }
+
+  .course-info-first {
+    display: grid;
+  }
+
+  .course-info-detail-align {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  /* 24.11.14 수정 - 추가 */
+  .course-info-detail-font-align {
+    white-space: nowrap; /* 텍스트를 한 줄로 제한 */
+    overflow: hidden; /* 넘치는 텍스트를 숨김 */
+    text-overflow: ellipsis; /* 넘친 부분에 ... 표시 */
+    width: 65%;
+  }
+
+  .course-info-detail-slash {
+    display: none;
+  }
+
+  /* 24.11.14 수정 - gap 추가 */
+  .pagination-controls {
+    /* margin-top: 12.5%; */
+    gap: 30px;
+  }
+
+  /* 24.11.14 수정 - 추가 */
+  .page-numbers {
+    gap: 12px;
+  }
+
+  .page-number,
+  .pagination-arrow {
+    width: 30px;
+    height: 30px;
+  }
+}

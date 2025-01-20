@@ -1,0 +1,1541 @@
+.main-2 {
+  align-items: flex-start;
+  background-color: var(--blackwhitewhite);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.slide-container {
+  position: relative;
+  width: 100%;
+  height: 700px;
+  overflow: hidden;
+}
+
+.slide-wrapper {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide-item {
+  min-width: 100%;
+  height: 700px;
+  margin-top: 100px;
+  position: relative;
+}
+
+.slide-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translateY(-100px);
+  /* translateY로 위로 20px 이동 */
+}
+
+.slide-text-overlay {
+  position: absolute;
+  top: 20%;
+  left: 13.5%;
+  color: white;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+  z-index: 10;
+}
+
+.text-2322 {
+  align-self: stretch;
+  color: var(--blackwhitewhite);
+  font-family: var(--font-family-pretendard-extrabold);
+  font-size: 60px;
+  font-weight: 800;
+  letter-spacing: 0;
+  line-height: 70px;
+  margin-bottom: 60px;
+  position: relative;
+  width: 740px;
+}
+
+.text-2323 {
+  align-self: stretch;
+  letter-spacing: 0;
+  line-height: 25px;
+  position: relative;
+  width: 620px;
+}
+
+/* Slide Indicator */
+.slide-indicator {
+  position: absolute;
+  bottom: 110px;
+  left: 13.5%;
+  color: white;
+  font-size: 1.5rem;
+  z-index: 10;
+}
+
+/* Progress Bar */
+.progress-bar {
+  position: absolute;
+  bottom: 80px;
+  left: 13.5%;
+  width: 73%;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.progress {
+  height: 100%;
+  background-color: white;
+  transition: width 0.5s ease-in-out;
+}
+
+.move {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  position: absolute;
+  bottom: 113px;
+  right: 13%;
+}
+
+/* Navigation Arrows */
+.left-arrow,
+.right-arrow {
+  /* 슬라이드 인디케이터와 같은 높이 */
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.pause-button {
+  height: 18px;
+  cursor: pointer;
+  display: block;
+}
+
+/* 여기까지 슬라이드  */
+
+/* 공지사항 */
+
+/* .slide-fade-enter-active,
+.slide-fade-leave-active {
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.slide-fade-enter,
+.slide-fade-leave-to {
+  opacity: 0;
+  transform: translateY(20px);
+  /* 텍스트가 위아래로 슬라이드되도록 설정 
+} */
+
+.frame-7383 {
+  align-items: flex-start;
+  background-color: var(--cultured-pearl);
+  border-bottom-style: solid;
+  border-bottom-width: 0.5px;
+  border-color: var(--celeste);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 80px;
+  padding: 30px 13.5%;
+  position: relative;
+  width: 100%;
+}
+
+.frame-7382 {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+}
+
+.frame-7381-1 {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+/* 24.12.13 수정 */
+.title-align {
+  display: flex;
+  /* gap: 4px; */
+  gap: 30px;
+  align-items: center;
+}
+
+.notice {
+  display: flex;
+  gap: 4px;
+}
+
+.vector-191 {
+  height: 20px;
+  position: relative;
+  width: 17px;
+}
+
+.text-2281 {
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+/* 24.12.13 수정 */
+.notice-list {
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+}
+
+/* .text-2282 {
+  margin-left: 20px;
+} */
+
+.date-align {
+  display: flex;
+  justify-content: flex-end;
+  white-space: nowrap;
+  gap: 380%;
+}
+
+.frame-7378-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  /* 이미지들을 오른쪽으로 정렬 */
+  gap: 15px;
+}
+
+/* .text-2-19 {
+  letter-spacing: -0.9px;
+  line-height: normal;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+} */
+
+/* 24.11.21 수정 - 추가 */
+.to-go-btn,
+.to-go-notice {
+  cursor: pointer;
+}
+
+/* .frame-7378 {
+  margin-right: 0px; 
+  position: relative;
+  width: 14px;
+} */
+
+/* 이벤트 */
+
+/* 24.11.22 수정 */
+.frame-7388 {
+  width: 100%;
+  display: flex;
+  padding: 100px 13.5%;
+  /* position: relative; */
+}
+
+/* 24.11.22 수정 */
+.frame-7389 {
+  width: 100%;
+  display: flex;
+  /* flex: 0 0 auto; */
+  gap: 50px;
+  /* position: relative; */
+}
+
+/* 24.11.22 수정 */
+.frame-738 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  /* gap: 30px; */
+  gap: 50px;
+  position: relative;
+  /* width: 50%; */
+  width: 100%;
+}
+
+/* 24.11.22 수정 - 추가 */
+.event-title-arrows-align {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+/* 24.11.22 수정 - 추가 */
+.event_title {
+  width: 100%;
+}
+
+/* Arrows */
+/* 24.11.22 수정 */
+.event-arrows {
+  display: flex;
+  right: 0;
+  position: absolute;
+  /* top: 5%; */
+  right: 10px;
+  display: flex;
+  gap: 10px;
+  /* transform: translateY(-50%); */
+}
+
+.Events-left-arrow,
+.Events-right-arrow {
+  cursor: pointer;
+  font-size: 24px;
+  user-select: none;
+}
+
+/* 24.11.22 수정 */
+.Events-slide-container {
+  /* position: relative; */
+  /* width: 675px; */
+  width: 100%;
+  overflow: hidden;
+}
+
+.Events-slide-wrapper {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* 24.11.22 수정 */
+.Events-slide-item {
+  /* min-width: 675px; */
+  min-width: 100%;
+  /* 각 슬라이드 항목이 컨테이너의 너비에 맞게 설정 */
+  height: 335px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* 24.12.05 수정 - 추가 : 종료이벤트 클릭 방지 */
+.Events-slide-item.expired-event {
+  pointer-events: none; /* 클릭 방지 */
+  cursor: not-allowed;
+  /* filter: grayscale(100%) brightness(0.5);  */
+  /* 사진을 어둡게 */
+}
+
+.Events-slide-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.Events-slide-item span {
+  width: 100%;
+  position: absolute;
+  bottom: 66px;
+  left: 0;
+  color: #fff;
+  text-align: center;
+  z-index: 999;
+  object-fit: cover;
+}
+
+/* 24.12.05 수정 - 추가 : 종료 이벤트 필터링 */
+/* .expired-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center; */
+/* 반투명 검정 배경 */
+/* background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+} */
+
+/* 24.12.05 수정 - 추가 : 종료 이벤트 필터링 */
+/* .expired-overlay span {
+  bottom: 50%;
+} */
+
+/* Dot Navigation */
+.Events-dot-container {
+  position: absolute;
+  bottom: 5%;
+  /* left: 46%; */
+  /* 24.12.05 수정 - dot 중앙정렬 */
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.Events-dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.Events-dot.active {
+  background-color: #333;
+}
+
+/*  여기까지 이벤트 */
+
+/* 베스트 스윙 */
+
+.overlap-group7-1 {
+  /* margin-left: -2px;
+  margin-top: 2px; */
+  position: relative;
+  width: 100%;
+}
+
+.frame-7356 {
+  align-items: flex-start;
+  background-color: var(--cultured-pearl);
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  justify-content: center;
+  padding: 100px 13.5%;
+  width: 100%;
+}
+
+.frame-7358 {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 50px;
+  position: relative;
+  width: 100%;
+}
+
+/* 24.12.13 수정 */
+.frame-797 {
+  /* align-self: stretch; */
+  display: flex;
+  /* flex: 0 0 auto; */
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+  align-items: center;
+}
+
+/* 24.12.13 수정 */
+.frame-7347 {
+  align-items: flex-end;
+  display: flex;
+  /* flex: 0 0 auto; */
+  gap: 12px;
+  justify-content: flex-end;
+  position: relative;
+}
+
+/* .text-2-18 {
+  letter-spacing: -1.9px;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+} */
+
+.frame-7346 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 40px;
+  position: relative;
+  width: 100%;
+}
+
+.best-slide-container {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.best-slider-wrapper {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  gap: 40px;
+  width: calc(100% + 40px);
+}
+
+.group688 {
+  width: calc(25% - 30px);
+  flex: 0 0 calc(25% - 30px);
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+/* .group-688 {
+  height: 401px;
+  position: relative;
+  width: 328px;
+} */
+
+/* 24.12.13 수정  */
+.overlap-group-101 {
+  align-items: flex-start;
+  background-color: var(--blackwhitewhite);
+  border: 1px solid;
+  border-color: var(--celeste);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  min-height: 401px;
+  /* width: 320px; */
+}
+
+/* 24.12.09 수정 */
+.image-3 {
+  height: 250px;
+  /* margin-left: -1px; */
+  /* margin-top: -1px; */
+  width: 320px;
+  /* 24.12.09 수정 - 추가 */
+  border-radius: 20px 20px 0px 0px;
+}
+
+.text-23-2 {
+  height: 17px;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-left: 29px;
+  margin-top: 33px;
+  white-space: nowrap;
+}
+
+.text-23-3 {
+  height: 13px;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-left: 29px;
+  margin-top: 14px;
+  white-space: nowrap;
+}
+
+.flex-row-88 {
+  display: flex;
+  justify-content: space-between;
+  /* width: 260px;
+  margin-left: 30px;
+  margin-top: 30px; */
+  /* 24.12.16 수정 - 추가 */
+  align-items: center;
+  width: 100%;
+  padding: 20px 30px;
+}
+
+/* .text-100 {
+  height: 10px;
+  letter-spacing: 0;
+  line-height: normal;
+  min-width: 1px;
+  white-space: nowrap;
+} */
+
+.date-25 {
+  height: 10px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+/* .group-688.group-691 {
+  margin-right: -4px;
+} */
+
+/* 
+.group-688.group-691 .flex-row-88 {
+  gap: 134px;
+}
+
+.group-688.group-691 .text-100 {
+  min-width: 57px;
+} */
+
+.overlap-group4-2 {
+  border-radius: 35px;
+  height: 70px;
+  /* left: 226px; */
+  /* 24.12.05 수정 - 추가 */
+  left: 11%;
+  position: absolute;
+  top: 330px;
+  width: 70px;
+}
+
+/* 24.12.13 수정 */
+.overlap-group4-3 {
+  display: none;
+}
+
+/* 24.12.16  수정  */
+.ellipse-10-2 {
+  background-color: var(--blackwhitewhite);
+  border: 1px solid;
+  border-color: var(--celeste);
+  border-radius: 35px;
+  height: 70px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  /* transform: rotate(-180deg); */
+  width: 70px;
+}
+
+.vector-5-4 {
+  height: 16px;
+  left: 31px;
+  position: absolute;
+  top: 27px;
+  width: 9px;
+}
+
+/* .group-693-1 {
+  align-items: flex-end;
+  display: flex;
+  height: 70px; */
+/* left: 1628px;*/
+/* 24.12.05 수정 - 추가 */
+/* right: 11%;
+  width: 70px;
+  position: absolute;
+  top: 331px;
+  transform: rotate(-180deg);
+} */
+
+/* 24.12.16 수정 - 추가 */
+.overlap-group5-1 {
+  border-radius: 35px;
+  height: 70px;
+  /* left: 226px; */
+  /* 24.12.05 수정 - 추가 */
+  right: 11%;
+  position: absolute;
+  top: 330px;
+  width: 70px;
+}
+
+/* 24.12.13 수정 - 추가 */
+.overlap-group5-3 {
+  display: none;
+}
+
+/* .overlap-group5-1 {
+  border-radius: 35px;
+  height: 70px;
+  margin-bottom: 0;
+  position: relative;
+  width: 70px;
+} */
+
+/* 24.12.16  수정  */
+.ellipse-10-3 {
+  background-color: var(--blackwhitewhite);
+  border: 1px solid;
+  border-color: var(--celeste);
+  border-radius: 35px;
+  height: 70px;
+  right: 0;
+  position: absolute;
+  top: 0;
+  /* transform: rotate(180deg); */
+  width: 70px;
+}
+
+/* 24.12.16  수정  */
+.vector-5-5 {
+  height: 16px;
+  right: 31px;
+  position: absolute;
+  top: 27px;
+  /* transform: rotate(180deg); */
+  width: 9px;
+}
+
+.frame-7357-2 {
+  align-items: flex-start;
+  background-color: var(--blackwhitewhite);
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-top: 1px;
+  padding: 100px 13.5%;
+  position: relative;
+  width: 100%;
+}
+
+.frame-73-10 {
+  align-items: flex-end;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 12px;
+  position: relative;
+}
+
+.frame-7355-1 {
+  align-items: center;
+  display: flex;
+  gap: 40px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+/* 코스 */
+/* 24.11.14 수정 - width, gap 값 변경 */
+.courses-grid {
+  align-items: flex-start;
+  flex-direction: column;
+  position: relative;
+  transition: transform 0.5s ease-in-out;
+  /* width: 120%; */
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* 3개의 열 */
+  grid-template-rows: repeat(2, auto);
+  /* 2개의 행 */
+  /* gap: 40px; */
+  /* 코스 사이의 간격 */
+  gap: 25px;
+}
+
+.group-763-3 {
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 250px;
+  border-radius: 20px 20px 0px 0px;
+  position: relative;
+  /* 24.11.21 수정 */
+  /* width: 440px !important; */
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+.frame-7683-3 {
+  align-items: flex-start;
+  align-self: stretch;
+  background-color: var(--blackwhitewhite);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-color: var(--alto);
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-radius: 0px 0px 20px 20px;
+  border-right-style: solid;
+  border-right-width: 1px;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 30px;
+  padding: 35px 30px;
+  position: relative;
+  width: 100%;
+}
+
+.frame-7759 {
+  align-items: flex-start;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 30px;
+  position: relative;
+  width: 207px;
+}
+
+.text-28-3 {
+  align-self: stretch;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+}
+
+.group-767-1 {
+  height: 41px;
+  position: relative;
+  width: 207px;
+}
+
+.frame-7757-1 {
+  align-items: flex-end;
+  display: flex;
+  gap: 10px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 207px;
+}
+
+/* .text-28-4 {
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+} */
+
+.rectangle-50926-1 {
+  background-color: var(--granite-gray);
+  height: 10px;
+  position: relative;
+  top: -5px;
+  width: 1px;
+}
+
+.frame-7758-2 {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 4px;
+  margin-right: -78px;
+  position: absolute;
+  top: 30px;
+}
+
+/* 코스 소개 */
+.rating-stars {
+  display: flex;
+  gap: 3px;
+}
+
+.red-star {
+  color: #d30f1a;
+}
+
+.gray-star {
+  color: #ddd;
+}
+
+/* 전국매장안내 */
+.frame-7369 {
+  align-items: flex-start;
+  background-color: var(--cultured-pearl);
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-top: 1px;
+  /* padding: 100px 258px; */
+  /* 24.12.05 수정 - 추가 */
+  padding: 100px 13.5%;
+  position: relative;
+  /* width: 1920px; */
+  /* 24.12.05 수정 - 추가 */
+  width: 100%;
+}
+
+.s_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* 24.12.05 수정 - 추가 */
+  width: 100%;
+}
+
+.s_title span {
+  flex-grow: 1;
+  /* 나머지 공간을 차지하도록 */
+  margin-top: 20px;
+  margin-left: 12px;
+}
+
+.s_bg {
+  display: flex;
+  /* width: 95%; */
+  /* 24.12.05 수정 - 추가 */
+  width: 100%;
+  justify-content: space-between;
+  /* 24.12.16 수정 - 추가  */
+  gap: 50px;
+}
+
+.s_image {
+  position: relative;
+  height: 385px;
+  /* 24.12.05 수정 - 추가 */
+  width: 100%;
+}
+
+.s_image img {
+  /* width: 675px; */
+  /* 24.12.05 수정 - 추가 */
+  width: 100%;
+  border-radius: 20px;
+  height: 385px;
+}
+
+.image_title {
+  position: absolute;
+  bottom: 0;
+  /* width: 675px; */
+  /* 24.12.05 수정 - 추가 */
+  width: 100%;
+  height: 75px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.s_location {
+  position: relative;
+  /* margin-left: 50px; */
+  /* 24.11.21 수정 - 추가 */
+  height: 386px;
+  /* 24.12.05 수정 - 추가 */
+  width: 100%;
+}
+
+.s_location table {
+  border: 1px solid #ccc;
+  background-color: #fff;
+  /* width: 660px; */
+  /* 24.12.05 수정 - 추가 */
+  width: 100%;
+  border-collapse: separate;
+  /* 셀 분리 */
+  border-spacing: 0;
+  /* 셀 간격 없음 */
+  border-radius: 15px;
+  /* 테이블 모서리 둥글게 */
+  overflow: hidden;
+  /* 테두리 밖 내용 숨기기 */
+  font-size: 18px;
+  margin-top: 7px;
+  /* 24.12.13 수정 - 추가 */
+  table-layout: fixed; /* 칸 비율을 고정 */
+}
+
+/* 24.11.14 수정 - 추가 */
+.s_location table thead {
+  display: grid;
+  justify-items: start;
+  width: 100%;
+  background-color: #fff;
+}
+
+/* 24.11.21 수정 - 추가 */
+.s_location table thead tr {
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+  /* 24.12.13 수정 - 추가 */
+  display: flex; /* 칸 비율을 위한 플렉스 박스 */
+  align-items: center;
+}
+
+/* 24.11.14 수정 - line-height 삭제 */
+.s_location table td {
+  padding: 20px;
+  /* border-bottom: 1px solid #ccc; */
+  /* line-height: 70%; */
+  background-color: #fff;
+  /* 24.11.21 수정 - 추가 */
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  /* 텍스트가 한 줄로만 나오게 */
+  overflow: hidden;
+  /* 넘칠 경우 숨기기 */
+  text-align: left;
+}
+
+/* 24.11.21 수정 - 추가  첫 번째 열(아이콘) */
+.s_location table td:first-child {
+  width: 10%;
+  /* 첫 번째 열은 비율에 맞게 너비 설정 */
+}
+
+/* 24.11.21 수정 - 추가  두 번째 열(매장 이름) */
+.s_location table td:nth-child(2) {
+  width: 40%;
+  /* 두 번째 열은 40%의 너비 */
+}
+
+/* 24.11.21 수정 - 추가  세 번째 열(주소) */
+.s_location table td:nth-child(3) {
+  width: 50%;
+  /* 세 번째 열은 50%의 너비 */
+  text-overflow: ellipsis; /* 말줄임표 */
+}
+
+/* 24.11.14 수정 - 추가 */
+/* 마지막 행의 하단 테두리 제거 */
+.s_location table tr:last-child {
+  border-bottom: none;
+}
+
+.s_location_title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.s_location_title span {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 100%;
+}
+
+.s_direct {
+  position: absolute;
+  right: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.s_direct img {
+  width: 12px;
+}
+
+/* 24.12.13 수정 */
+.ellipse-11-2 {
+  /* line-height: 80%; */
+  border: 3px solid;
+  border-color: var(--greygrey-900);
+  border-radius: 6px;
+  height: 12px;
+  /* position: relative; */
+  margin-left: 5px;
+  width: 12px;
+}
+
+/* 랭킹 */
+.ranking {
+  width: 50%;
+  overflow-x: auto;
+}
+
+.ranking-btn.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.r_title h3 {
+  line-height: 100%;
+}
+
+.r_title {
+  display: flex;
+  margin-bottom: 30px;
+  justify-content: space-between;
+}
+
+.ranking table {
+  width: 675px;
+  border: 1px solid #cccccc;
+  border-radius: 20px;
+  border-collapse: separate;
+  border-spacing: 0;
+  overflow: hidden;
+}
+
+/* 24.11.13 수정 - border 겹침 수정 */
+.ranking th,
+.ranking td {
+  text-align: center;
+  border-top: 0.5px solid #cccccc;
+  border-bottom: none;
+}
+
+.ranking thead tr {
+  border-collapse: collapse;
+}
+
+.ranking td div {
+  line-height: 45px;
+}
+
+.ranking th {
+  background-color: #d30f1a;
+  color: #fff;
+  padding: 20px 40px;
+}
+
+.cell-with-image {
+  display: flex;
+  /* 이미지들을 수평으로 배치 */
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  height: 100%;
+}
+
+.cell-with-image img {
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+  /* 이미지 크기 맞추기 */
+  vertical-align: middle;
+  /* 이미지 수직 정렬 */
+}
+
+.cell-with-image span {
+  line-height: 54px;
+  /* 이미지 크기와 일치 */
+}
+
+.direct img {
+  margin-left: 10px;
+}
+
+.slide-fade-enter-active,
+.slide-fade-leave-active {
+  transition: opacity 1s ease, transform 1s ease;
+  /* 전환 속도를 1초로 변경 */
+}
+
+.slide-fade-enter,
+.slide-fade-leave-to {
+  opacity: 0;
+  transform: translateY(20px);
+  /* 텍스트가 위아래로 슬라이드되도록 설정 */
+}
+
+@media (max-width: 1320px) {
+  .date-align {
+    gap: 200%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .date-align {
+    gap: 50%;
+  }
+}
+
+@media (max-width: 720px) {
+  /* 24.12.13 수정 - 추가 */
+  .main-2 {
+    width: 100%;
+    max-width: 720px;
+    min-width: 360px;
+    height: 100%;
+    gap: 0;
+  }
+
+  .slide-text-overlay {
+    top: 20%;
+    left: 20px;
+  }
+
+  .text-2322 {
+    font-size: 30px;
+    width: 250px;
+    line-height: 35px;
+    margin-bottom: 30px;
+    left: 20px;
+  }
+
+  .text-2323 {
+    font-size: 14px !important;
+    width: 350px;
+    left: 20px;
+  }
+
+  .slide-indicator {
+    bottom: 80px;
+    left: 20px;
+  }
+
+  .progress-bar {
+    width: 94%;
+    bottom: 50px;
+    left: 20px;
+  }
+
+  .left-arrow,
+  .right-arrow {
+    bottom: 70px;
+    right: 20px;
+  }
+
+  .left-arrow {
+    right: 40px;
+  }
+
+  /* 공지사항 */
+  .frame-7383 {
+    padding: 20px;
+    height: 100px;
+  }
+
+  /* 24.12.13 수정 - 추가 */
+  .frame-7381-1 {
+    align-items: flex-start;
+  }
+
+  /* 24.12.13 수정 */
+  .title-align {
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+  }
+
+  .text-2282 {
+    margin-left: 0px;
+  }
+
+  .date-align {
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
+
+  /* 이벤트 */
+  .frame-7388 {
+    padding: 50px 20px;
+  }
+  .frame-7389 {
+    flex-direction: column;
+  }
+
+  /* 24.12.13 수정 - 추가 */
+  .frame-738 {
+    width: 100%;
+    gap: 20px;
+  }
+
+  /* 24.12.13 수정 - 추가  */
+  .event_title {
+    font-size: 16px;
+  }
+
+  /* 24.12.13 수정 - 추가 */
+  .Events-slide-container {
+    border-radius: 10px;
+  }
+
+  /* 24.12.13 수정 - 추가 */
+  .Events-slide-item {
+    height: 160px;
+    border-radius: 10px;
+  }
+
+  /* 24.12.13 수정 - 추가 */
+  .Events-slide-item span {
+    font-size: 12px;
+    bottom: 30px;
+  }
+
+  /* 24.12.13 수정 - 추가 */
+  .Events-dot {
+    width: 10px;
+    height: 10px;
+  }
+
+  /* .cell-with-image img {
+    display: none;
+  } */
+
+  /* 24.12.13 수정 */
+  .to-go-btn {
+    visibility: hidden;
+  }
+
+  /* 베스트 스윙 */
+  .frame-7356 {
+    padding: 50px 20px;
+  }
+
+  .frame-7358 {
+    gap: 20px;
+  }
+
+  /* 24.12.13 수정 - 추가 */
+  .frame-7347 {
+    width: 100%;
+    /* 24.12.27 수정 - 추가 */
+    justify-content: flex-start;
+  }
+
+  /* 24.12.13 수정 */
+  .best-slider-wrapper {
+    gap: 20px;
+    width: calc(100% + 20px);
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(100%);
+  }
+
+  .group688 {
+    width: calc(25% - 30px);
+    flex: 0 0 calc(25% - 30px);
+    box-sizing: border-box;
+    padding: 10px;
+  }
+
+  /* 24.12.16 수정 - 추가 */
+  .overlap-group-101 {
+    width: 320px;
+  }
+
+  .overlap-group4-2 {
+    height: 50px;
+    width: 50px;
+    /* left: 52px; */
+    /* 24.12.16 수정 - 추가 */
+    top: 50%;
+    left: 0;
+  }
+
+  /* 24.12.16 수정 */
+  .ellipse-10-2 {
+    width: 50px;
+    height: 50px;
+    /* left: -10px; */
+    /* top: -50px; */
+  }
+
+  /* 24.12.16 수정 */
+  .vector-5-4 {
+    /* top: -33px;
+    left: 8px; */
+    top: 38%;
+    left: 35%;
+  }
+
+  .overlap-group5-1 {
+    width: 50px;
+    height: 50px;
+    /* left: 250px;
+    top: 260px; */
+    /* 24.12.16 수정 - 추가 */
+    top: 50%;
+    right: 0;
+  }
+
+  /* .overlap-group5-1 {
+    width: 50px;
+    top: -20px;
+    height: 50px;
+  } */
+
+  .ellipse-10-3 {
+    width: 50px;
+    height: 50px;
+  }
+
+  /* 24.12.16 수정 */
+  .vector-5-5 {
+    /* top: 15px;
+    left: 18px; */
+    top: 38%;
+    right: 35%;
+  }
+
+  /* 코스 */
+  /* 24.12.16 수정 */
+  .frame-7357-2 {
+    padding: 50px 20px;
+    gap: 20px;
+  }
+
+  .text-2-18 {
+    font-size: 16px !important;
+  }
+
+  .text-2-19 {
+    font-size: 14px !important;
+    color: #999 !important;
+  }
+
+  /* 24.12.16 수정 - 추가  */
+  .frame-7355-1 {
+    width: 100%;
+  }
+
+  /* 24.12.16 수정  */
+  .courses-grid {
+    /* width: 112.5% !important; */
+    gap: 0px;
+  }
+
+  .group-763-3 {
+    width: 320px;
+  }
+
+  /* 24.12.16 수정 - 추가 */
+  .overlap-group4-3 {
+    display: flex;
+    border-radius: 35px;
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    left: 0;
+    position: absolute;
+  }
+
+  /* 24.12.16 수정 - 추가 */
+  .overlap-group5-3 {
+    display: flex;
+    border-radius: 35px;
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    right: 0;
+    position: absolute;
+  }
+
+  /* 전국매장안내 */
+  /* 24.12.16 수정  */
+  .frame-7369 {
+    padding: 50px 20px;
+    gap: 20px;
+  }
+
+  .s_title span {
+    margin-top: 0px;
+  }
+
+  .s_bg {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .s_image {
+    height: 182px;
+    /* width: 320px; */
+    /* 24.12.27 수정 - 추가 */
+    width: 100%;
+  }
+
+  .s_image img {
+    height: 182px;
+    /* width: 320px; */
+    /* 24.12.27 수정 - 추가 */
+    width: 100%;
+    /* 24.12.16 수정 - 추가 */
+    border-radius: 10px;
+  }
+
+  .image_title {
+    /* width: 320px; */
+    /* 24.12.27 수정 - 추가 */
+    width: 100%;
+    top: 148px;
+    font-size: 14px !important;
+    height: 36px;
+    /* 24.12.16 수정 - 추가 */
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  .image_title span {
+    font-size: 14px !important;
+  }
+
+  .s_location {
+    /* margin-left: 0px; */
+    height: 100%;
+    /* 24.12.16 수정 - 추가 */
+    display: grid;
+    gap: 20px;
+    
+  }
+
+  /* 24.12.16 수정  */
+  .s_location table {
+    /* width: 320px; */
+    /* 24.12.27 수정 - 추가 */
+    width: 100%;
+    /* height: 240px; */
+    height: 100%;
+    border-radius: 10px;
+    margin-top: 0;
+  }
+
+  .s_location table thead tr {
+    align-items: center;
+  }
+
+  .s_location table td {
+    white-space: nowrap;
+    /* padding: 5px; */
+    font-size: 12px;
+    /* padding-top: 14px; */
+    height: 100%;
+    padding: 14px 0;
+  }
+  /* 24.12.16 수정 - 추가 */
+  .s_location table td:first-child {
+    width: 10%;
+    padding-top: 15px;
+  }
+
+  /* 24.12.16 수정 - 추가 */
+  .s_location table td:nth-child(2) {
+    width: 38%;
+    font-family: var(--font-family-pretendard-semibold);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+  }
+
+  /* 24.12.16 수정 - 추가  */
+  .ellipse-11-2 {
+    width: 8px;
+    height: 8px;
+    margin-left: 15px;
+    font-size: 12px;
+  }
+  .text-2309 {
+    font-size: 16px !important;
+  }
+  /* 24.12.16 수정 */
+  .s_direct {
+    /* width: 30px; */
+    gap: 12px;
+  }
+  .s_direct img {
+    width: 9px;
+  }
+}
+
+/* @media (max-width: 360px) {
+
+  .ranking table {
+    width: 58%;
+    border-radius: 10px;
+  }
+
+  .ranking th {
+    font-size: 12px;
+    white-space: nowrap;
+    padding: 17px 23px;
+  }
+
+  .ranking table td {
+    font-size: 12px;
+  }
+  .cell-with-image {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+
+} */

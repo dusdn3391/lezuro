@@ -1,0 +1,159 @@
+.findid1-2 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.findid1-wrap {
+  align-items: center;
+  background-color: var(--cultured-pearl);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  margin: 17% 0;
+  padding: 50px;
+  position: relative;
+  width: 33%;
+}
+
+.findid1-title {
+  width: 100%;
+  text-align: center;
+}
+
+.findid1-content {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+  width: 100%;
+}
+
+.findid1-content-item {
+  display: flex;
+  align-items: center;
+}
+
+.findid1-content-item-title {
+  width: 25%;
+}
+
+.input-box {
+  width: 100%;
+  height: 60px;
+  border: none;
+  padding: 0 20px;
+}
+
+.insert-name {
+  background-color: #fff;
+  border: none;
+  padding: 20px 18px;
+  position: relative;
+  width: 100%;
+}
+
+.input-box::placeholder,
+.insert-name::placeholder {
+  color: #999;
+}
+
+.findid1-content-item {
+  justify-content: space-between;
+  width: 100%;
+}
+
+.input-btn-align {
+  display: flex;
+  width: 100%;
+}
+
+.cert-number-btn {
+  align-items: center;
+  background-color: var(--mine-shaft);
+  height: 60px;
+  width: 49%;
+  border: none;
+  padding: 18px 15px;
+  cursor: pointer;
+}
+
+.find-btn {
+  align-items: center;
+  background-color: var(--monza);
+  display: flex;
+  height: 55px;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  margin-top: 40px;
+}
+
+/* 720px 이하일 때 모바일 버전 */
+@media only screen and (max-width: 720px) {
+  .findid1-2 {
+    width: 100%;
+    max-width: 720px;
+    min-width: 360px;
+    height: 100%;
+    gap: 0;
+  }
+
+  .findid1-wrap {
+    width: 100%;
+    padding: 20px;
+    margin-top: 6%;
+    margin-bottom: 18%;
+    background-color: #fff;
+    gap: 30px;
+  }
+
+  .findid1-title {
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .findid1-content-item-title {
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 6px;
+  }
+
+  .findid1-content {
+    gap: 20px;
+  }
+  .input-box,
+  .insert-name {
+    border: none;
+    width: 100%;
+    background-color: #f5f6f6;
+    font-size: 14px;
+    height: 55px;
+  }
+
+  .input-box::placeholder {
+    color: #999;
+  }
+
+  .findid1-content-item {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .cert-number-btn {
+    width: 60%;
+    font-size: 14px;
+    height: 55px;
+  }
+}

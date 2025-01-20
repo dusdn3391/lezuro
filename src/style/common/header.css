@@ -1,0 +1,392 @@
+.view {
+  background-color: var(--blackwhitewhite);
+  height: 100px;
+  width: 100%;
+  padding: 30px 13.5%;
+  border-bottom: 1px solid #ddd;
+}
+
+.frame-7504 {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  /* 24.12.16 수정 - 추가 */
+  width: 100%;
+  /* gap: 277px; */
+  gap: 20%;
+  height: 100%;
+}
+
+/* 24.12.16 수정 */
+.lezuro_logo_black-1 {
+  position: relative;
+  /* width: 127px; */
+  width: 9.2%;
+}
+
+.bar {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.frame-7371 {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  /* width: 616px; */
+  /* 24.12.16 수정 - 추가 */
+  width: 100%;
+}
+
+.menu-item {
+  gap: 8px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* 24.12.16 수정 */
+.menu-item::before {
+  content: "";
+  position: absolute;
+  /* top: -10px; */
+  left: 0;
+  right: 0;
+  /* padding-bottom: 20px; */
+  height: 30px;
+  background: transparent;
+}
+
+.active {
+  color: #d30f1a;
+  /* 활성화된 메뉴 항목 색상 */
+}
+
+/* .text-2 {
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+} */
+
+.text-2.active {
+  color: #d30f1a;
+}
+
+.menu-item:hover .submenu {
+  display: flex;
+}
+
+.submenu {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  border-radius: 10px;
+  /* top: 150%; */
+  /* 24.12.16 수정 */
+  top: 130%;
+  /* Keep the submenu right below */
+  background-color: white;
+  border: 0.5px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+
+/* 서브 메뉴 아이템에 대한 활성화 색상 */
+.submenu-item.active {
+  color: #d30f1a;
+  /* 서브 메뉴 아이템 활성화 색상 */
+}
+
+.submenu-item {
+  display: flex;
+  /* 아이콘과 텍스트를 같은 줄에 배치 */
+  align-items: center;
+  /* 아이콘과 텍스트가 수직 가운데 정렬 */
+  gap: 8px;
+  /* 아이콘과 텍스트 사이 간격 조정 */
+  padding: 15px 20px;
+  white-space: nowrap;
+  /* 텍스트가 한 줄에 표시되도록 설정 */
+}
+
+.submenu-item:hover {
+  background-color: #f0f0f0;
+  cursor: pointer;
+  color: #d30f1a;
+}
+
+.submenu img {
+  width: 16px;
+  /* Adjust submenu icons size */
+  height: 16px;
+}
+
+.frame-7372 {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 8px;
+  /* Adjust the gap between items */
+  justify-content: flex-end;
+  position: relative;
+}
+
+.majesticonsuser-line {
+  height: 24px;
+  /* Increase the icon size */
+  width: 24px;
+}
+
+.text-9 {
+  font-size: 18px;
+  /* Adjust font size */
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+  color: #333333;
+  /* Match the text color */
+}
+
+.vector-3 {
+  height: 10px;
+  /* Adjust the size of the vector (arrow) */
+  width: 12px;
+  margin-left: 4px;
+  /* Adjust spacing between text and vector */
+}
+
+.info {
+  display: inline-flex;
+  /* 모든 요소를 한 줄에 나열 */
+  align-items: center;
+  /* 아이콘, 텍스트, 벡터를 수직 중앙에 정렬 */
+  gap: 8px;
+  /* 아이콘과 텍스트 간 간격 설정 */
+}
+
+/* 
+.nav-text {
+  display: block;
+} */
+/* 
+.submenu-item {
+  padding: 20px 20px;
+  white-space: nowrap;
+} */
+
+.frame-7279 {
+  align-items: center;
+  display: inline-flex;
+  gap: 20px;
+  justify-content: flex-end;
+}
+
+.text-2045 {
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.line-1-1 {
+  height: 12px;
+  width: 1px;
+}
+
+.text-2046 {
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+@media (max-width: 720px) {
+  .view {
+    padding: 20px;
+    height: 58px;
+  }
+
+  .frame-7371,
+  .frame-7372 {
+    display: none;
+  }
+
+  .lezuro_logo_black-1 {
+    width: 65px;
+  }
+
+  .bar {
+    display: block;
+  }
+
+  /* .mobile-menu {
+    position: absolute;
+    top: -20px;
+    right: -300px;
+    width: 260px; */
+  /* height: 100%; */
+  /* display: block;
+    background-color: white;
+    z-index: 9999;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out; */
+  /* 24.11.14 수정 - padding 변경 */
+  /* padding: 20px;
+    padding-left: 0;
+    border: 1px solid #ddd;
+  } */
+
+  /* 24.12.16 수정 */
+  .mobile-menu {
+    position: fixed; /* 화면에 고정 */
+    top: 0; /* 위에서부터 시작 */
+    right: 0; /* 오른쪽 끝에 붙임 */
+    width: 260px;
+    height: 100%; /* 화면 전체 높이 */
+    display: block;
+    background-color: white;
+    z-index: 9999; /* 다른 요소 위에 표시 */
+    transform: translateX(0); /* 메뉴를 완전히 보이게 함 */
+    transition: transform 0.3s ease-in-out; /* 열고 닫는 애니메이션 */
+    padding: 17px 15px; /* 내부 여백 */
+    box-sizing: border-box; /* 패딩 포함 너비 유지 */
+    overflow-y: auto; /* 세로 스크롤 허용 */
+  }
+
+  .close-menu-btn {
+    font-size: 24px;
+    text-align: left;
+    cursor: pointer;
+    padding-left: 20px;
+  }
+
+  .user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+    font-size: 14px;
+    border-bottom: 1px solid #eee;
+    /* padding-bottom: 17px; */
+    /* margin-top: 34px; */
+    /* 24.11.14 수정 - padding, margin 수정 */
+    margin-top: 17px;
+    padding: 17px 20px;
+    margin-bottom: 20px;
+  }
+
+  .menu-content {
+    flex: 1;
+    overflow-y: auto;
+  }
+
+  .menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 16px;
+    cursor: pointer;
+  }
+  .menu-header img {
+    width: 10px;
+    height: 5px;
+  }
+
+  .menu-header.active {
+    background-color: #d30f1a;
+    color: #fff;
+    padding: 18px 16px;
+    border-radius: 4px;
+  }
+  .dropdownmenu {
+    display: block;
+    padding-top: 10px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee;
+  }
+
+  .dropdownmenu-item {
+    padding: 8px 16px;
+    cursor: pointer;
+    margin-bottom: 5px;
+  }
+
+  .dropdownmenu-item:hover {
+    background-color: #f0f0f0;
+    cursor: pointer;
+  }
+
+  /* .menu-footer {
+    display: flex;
+    align-items: center;
+    margin-top: 200px;
+    border-top: 1px solid #ddd;
+  } */
+
+   /* 24.12.16 수정 - 추가 */
+  .menu-footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+      /* 부모 요소를 기준으로 위치 고정 */
+    /* position: absolute;  */
+    bottom: 0; /* 맨 아래에 붙임 */
+    left: 0; /* 왼쪽에서 시작 */
+    width: 100%; /* 너비를 가득 채움 */
+    background-color: white; /* 메뉴 색상과 일관성 */
+    padding: 7px 39px; /* 내부 여백 */
+    padding-top: 20px;
+    box-sizing: border-box; /* 패딩 포함 너비 유지 */
+    border-top: 1px solid #ddd; /* 상단 경계선 추가 */
+  }
+  
+  /* .menu-footer-item {
+    padding: 18px 29px;
+    display: flex;
+    gap: 5px;
+    white-space: nowrap;
+  }
+     */
+  .menu-footer-item:nth-child(2) {
+    padding: 18px 25px;
+  }
+  .menu-footer-item img {
+    width: 14px;
+  }
+
+  .login-info {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  /* 24.12.16 수정 - 추가 */
+  .router-link-class {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .arrow {
+    width: 6px;
+    position: absolute;
+    top: 6px;
+    left: 9px;
+  }
+
+  .arrow-bg {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background-color: #f4f4f4;
+    position: relative;
+  }
+}

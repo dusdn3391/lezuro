@@ -1,0 +1,206 @@
+.contact-write {
+  width: 100%;
+}
+
+.title {
+  padding: 104px 13.5%;
+  padding-bottom: 44px;
+}
+
+.content-wrap {
+  margin-bottom: 140px;
+  padding: 0px 13.5%;
+}
+
+.write-wrap {
+  border: 1px solid #dddddd;
+  padding: 40px;
+  width: 100%;
+}
+
+.title-box,
+.content-box,
+.select-box {
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  display: flex;
+  padding: 20px 20px 20px 0px;
+  position: relative;
+  width: 100%;
+}
+
+.content-title {
+  display: flex;
+  gap: 10px;
+  position: relative;
+  width: 150px;
+}
+
+/* 24.11.13 수정 -  placeholder 색 변경 */
+input::placeholder,
+textarea::placeholder {
+  color: #999;
+}
+
+.frame-7281-8 {
+  background-color: #fafafa;
+  padding: 20px;
+  width: 100%;
+  border: 0.5px solid #ddd;
+}
+
+/* 24.11.13 수정 - border 겹치는 부분 수정 */
+.select-box {
+  border-top: none;
+}
+
+.branch-select-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+}
+
+.branch-select-container select {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #ddd;
+  background-color: #fafafa;
+  color: #999;
+}
+
+/* 24.11.13 수정 - border 겹치는 부분 수정 */
+.content-box {
+  border: none;
+}
+
+/* 24.11.25 수정 */
+.frame-7281-9 {
+  background-color: #fafafa;
+  padding: 20px;
+  width: 100% !important;
+  border: 0.5px solid #ddd;
+  /* 24.12.20 수정 */
+  height: 220px;
+  /* 24.11.25 수정 - 추가 */
+  resize: none;
+}
+
+/* 24.12.20 수정 - 추가  */
+.file-align {
+  width: 100%;
+}
+
+.frame-7487-4 {
+  align-items: center;
+  background-color: var(--hint-of-red);
+  border: 0.5px solid;
+  border-color: var(--celeste);
+  display: flex;
+  gap: 10px;
+  height: 55px;
+  padding: 0px 20px;
+  position: relative;
+  width: 100%;
+}
+
+/* 24.12.20 수정 - 추가 */
+.image-preview {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+/* 24.12.20 수정 - 추가 */
+.preview-image {
+  width: 200px;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 24.11.13 수정- margin-top 변경 */
+.frame-7859-3 {
+  display: flex;
+  gap: 10px;
+  margin-top: 50px;
+  justify-content: center;
+  width: 100%;
+}
+
+/* 24.12.20 수정 */
+.cancel-btn,
+.submit-btn {
+  align-items: center;
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  width: 200px;
+  border: none;
+}
+
+/* 24.12.20 수정 - 추가 */
+.cancel-btn {
+  background-color: #999;
+}
+
+/* 24.12.20 수정 - 추가*/
+.submit-btn {
+  background-color: #d30f1a;
+}
+
+@media (max-width: 720px) {
+  /* 24.12.20 수정 - 추가 */
+  .contact-write {
+    width: 100%;
+    max-width: 720px;
+    min-width: 360px;
+    height: 100%;
+  }
+  .title {
+    padding: 40px 20px;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .content-wrap {
+    padding: 20px;
+    padding-top: 7px;
+  }
+
+  .write-wrap {
+    border: none;
+    padding: 0px;
+  }
+
+  /* 24.12.20 수정 - select-box 추가 */
+  .content-box,
+  .title-box,
+  .select-box {
+    display: block;
+    border: none;
+    padding: 0px;
+  }
+
+  .title-box input {
+    width: 100%;
+  }
+
+  .content-title {
+    display: block;
+    padding: 17.5px 0px;
+  }
+
+  .content-box input {
+    width: 100%;
+  }
+
+  /* 24.12.20 수정 - 추가  */
+  .cancel-btn,
+  .submit-btn {
+    width: 50%;
+    border-radius: 4px;
+    height: 40px;
+    font-size: 14px;
+  }
+}

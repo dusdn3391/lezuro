@@ -1,0 +1,78 @@
+.findid1-result-2 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.findid1-result-wrap {
+  align-items: center;
+  background-color: var(--cultured-pearl);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  margin: 17% 0;
+  padding: 50px;
+  position: relative;
+  width: 33%;
+}
+
+.findid1-result-title {
+  width: 100%;
+  text-align: center;
+}
+
+.result-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.find-result-btn {
+  align-items: center;
+  background-color: var(--monza);
+  display: flex;
+  height: 55px;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+}
+/* 720px 이하일 때 모바일 버전 */
+@media only screen and (max-width: 720px) {
+  .findid1-2 {
+    width: 100%;
+    max-width: 720px;
+    min-width: 360px;
+    height: 100%;
+    gap: 0;
+  }
+
+  .findid1-result-wrap {
+    width: 100%;
+    padding: 20px;
+    margin-top: 6%;
+    margin-bottom: 44%;
+    background-color: #fff;
+    gap: 50px;
+  }
+
+  .findid1-result-title {
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .result-text {
+    flex-direction: column;
+  }
+
+  .find-btn {
+    font-size: 16px;
+  }
+}

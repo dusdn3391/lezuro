@@ -1,0 +1,207 @@
+.view-176 {
+  align-items: flex-start;
+  background-color: var(--monza);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 70px;
+  padding: 0px 13.5%;
+  position: relative;
+  width: 100%;
+}
+
+.frame-7636-9 {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+  position: relative;
+  /* width: 73.5%; */
+  /* 24.12.17 수정 */
+  width: 100%;
+}
+
+.frame-7635 {
+  height: 70px;
+  width: 70px;
+}
+
+/* 24.12.17 수정 */
+.first-nav {
+  width: 200px;
+}
+
+/* 24.12.17 수정 */
+.second-navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 20px;
+  min-width: 200px;
+  align-items: center;
+  height: 70px;
+  border-color: var(--white-3);
+  border-right-style: solid;
+  border-right-width: 1px;
+}
+
+
+/* 24.12.17 수정 */
+/* 두 번째 드롭다운 스타일 */
+.second-dropdown {
+  background-color: white;
+  border: 1px solid #ddd;
+  width: 200px;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  /* 첫 번째 드롭다운 항목의 오른쪽에 위치 */
+  z-index: 1000;
+}
+
+.second-dropdown-menu {
+  background-color: white;
+  border: 1px solid #ddd;
+  position: absolute;
+  /* position: relative; */
+  top: 100%;
+  left: 270px;
+  /* 24.12.17 수정 - 추가 */
+  width: 200px;
+  z-index: 1000;
+}
+
+
+
+.second-dropdown li {
+  padding: 20px;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  display: block;
+}
+
+.second-dropdown li:hover {
+  background-color: #f1f1f1;
+}
+
+.second-dropdown-container {
+  display: inline-block;
+  position: absolute;
+  top: 70px;
+  width: 100%;
+}
+
+.second-dropdown-menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.second-dropdown-item {
+  position: relative;
+  padding: 20px;
+  display: block;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.second-dropdown-item:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown-container {
+  display: inline-block;
+  position: absolute;
+  top: 70px;
+}
+
+.dropdown-menu {
+  background-color: white;
+  border: 1px solid #ddd;
+  position: absolute;
+  top: 100%;
+  left: 70px;
+  width: 200px;
+  z-index: 1000;
+}
+
+.dropdown-menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-item {
+  position: relative;
+  /* 포지션을 상대적으로 설정 */
+  padding: 20px;
+  display: block;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.dropdown-item:hover {
+  background-color: #f1f1f1;
+}
+
+@media (max-width: 720px) {
+  .frame-7635 {
+    display: none !important;
+  }
+
+  .view-5 {
+    padding: 0px !important;
+  }
+
+  .view-176 {
+    padding: 0px !important;
+    /* 24.11.14 수정 - 추가 */
+    height: 50px !important;
+  }
+
+  .first-nav,
+  .frame-7635 {
+    display: none;
+  }
+  .frame-7636-9,
+  .frame-7636 {
+    width: 100% !important;
+  }
+  .second-navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+    width: 100% !important;
+    align-items: center;
+    /* 24.11.14 수정 - height 변경*/
+    height: 50px !important;
+    border-color: var(--white-3);
+    border-right-style: none;
+    border-right-width: 1px;
+  }
+
+  .second-dropdown-container {
+    top: 50px !important;
+  }
+  /* 24.11.14 수정 - 추가 */
+  .second-title {
+    font-size: 14px;
+  }
+
+  .second-dropdown-menu {
+    left: 0 !important;
+    right: 0; /* 오른쪽도 고정하여 너비 조정 */
+    width: 100% !important;
+    z-index: 1000;
+  }
+
+  .second-dropdown-item {
+    /* 24.11.14 수정 - height 변경*/
+    height: 50px !important;
+    font-size: 14px;
+    position: relative;
+    padding: 20px;
+    display: block;
+    border: 1px solid #ddd;
+    width: 100%;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,443 @@
+.coursedetails-2 {
+  display: flex;
+  flex-direction: column;
+  /* overflow: hidden; */
+  position: relative;
+  align-items: center;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.title {
+  width: 73%;
+  padding-top: 5.42%;
+  padding-bottom: 2.66%;
+}
+
+.course-detail-content {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  position: relative;
+  width: 73%;
+  margin-bottom: 7.8%;
+}
+
+.course-image-box {
+  align-self: stretch;
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.course-img {
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  width: 100%;
+}
+
+.course-detail-info {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ddd;
+  gap: 60px;
+  padding: 40px;
+  position: relative;
+  width: 100%;
+}
+
+.course-detail-head {
+  align-items: flex-start;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 30px;
+  position: relative;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.course-detail-head-first {
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+  position: relative;
+  width: 100%;
+}
+
+.course-detail-region {
+  font-size: 20px;
+}
+
+.course-detail-head-end {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  position: relative;
+  width: 100%;
+}
+
+.course-detail-head-end-first {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.course-detail-head-end-difficulty {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.course-rating-stars {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.course-red-star {
+  color: #d30f1a;
+}
+
+.course-gray-star {
+  color: #ddd;
+}
+
+.course-detail-body {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 30px;
+  position: relative;
+  width: 100%;
+}
+
+.average-level {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+}
+
+.average-level-card {
+  background-color: #f5f6f6;
+  border-radius: 20px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  width: 15.2%;
+  position: relative;
+}
+
+.average-level-align,
+.grade-circle {
+  height: 90px;
+  position: relative;
+  width: 90px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  gap: 20px;
+}
+
+.grade-circle-image {
+  height: 90px;
+  position: absolute;
+  top: 0;
+  width: 90px;
+}
+
+.grade-font {
+  position: absolute;
+}
+
+.course-detail-hole-detail-info {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.course-detail-hole-detail-info-box {
+  align-items: center;
+  align-self: stretch;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  display: flex;
+  gap: 20px;
+  padding: 30px;
+  position: relative;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.course-detail-hole-detail-info-box-align {
+  display: flex;
+  gap: 12px;
+  position: relative;
+  width: 70%;
+}
+
+.hole-detail-info-box-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.hole-detail-info-box-head {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.table-detail-wrapper {
+  width: 100%;
+  overflow-x: auto; /* 가로 스크롤 허용 */
+}
+.table-detail-align {
+  width: 100%;
+  margin-bottom: 1px;
+}
+.hole-detail-info-table {
+  border-collapse: collapse;
+}
+
+th,
+td {
+  text-align: center;
+  border: 0.5px solid #ddd;
+  padding: 15.6px 0;
+  width:75.14px;
+}
+.hole-detail-info-table th:nth-child(1){
+  width:175px;
+}
+.hole-col,
+.par-col {
+  background-color: #f5f5f5;
+}
+
+.hole-detail-image-box {
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  display: flex;
+  height: 322px;
+  justify-content: space-between;
+  width: 30%;
+  /* min-width: 371px; */
+  padding: 29.5px 13.4px;
+}
+
+/* .hole-detail-info-tabl2 th{
+  width:75.14px;
+}
+.hole-detail-info-tabl2 th:nth-child(1){
+  width:175px;
+} */
+.hole-detail-image-box-right-arrow {
+  height: 24px;
+  width: 23px;
+}
+
+.flex-col-41 {
+  align-items: center;
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  min-height: 253px;
+  width: 184px;
+}
+
+.course-hole-detail-image {
+  height: 225px;
+  width: 145px;
+}
+
+.no-image-text {
+  text-align: center;
+  color: #999;
+  /* 아래 콘텐츠와 간격 추가 */
+  height: 200px;
+  /* 이미지 영역 크기와 동일하게 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hole-detail-address {
+  letter-spacing: 0;
+  line-height: normal;
+  text-align: center;
+  width: 100%;
+}
+
+.hole-detail-image-box-right-arrow {
+  height: 24px;
+  width: 23px;
+}
+
+/* 720px 이하일 때 모바일 버전 */
+@media only screen and (max-width: 720px) {
+  .coursedetails-2 {
+    width: 100%;
+    max-width: 720px;
+    min-width: 360px;
+    height: 100%;
+  }
+
+  .title {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+    padding: 8.5%;
+    margin-top: 3%;
+  }
+
+  .course-detail-content {
+    width: 100%;
+    padding: 0 20px;
+    gap: 20px;
+    margin-bottom: 28.9%;
+  }
+
+  .course-image-box {
+    height: 320px;
+  }
+
+  .course-detail-info {
+    border: none;
+    padding: 0;
+    gap: 20px;
+  }
+
+  .course-detail-head {
+    margin: 0;
+  }
+
+  .course-detail-name {
+    font-size: 20px;
+  }
+
+  .course-detail-region {
+    font-size: 14px;
+    font-family: var(--font-family-pretendard-regular);
+  }
+
+  .course-detail-slash {
+    display: none;
+  }
+
+  .course-detail-head-end {
+    display: grid;
+  }
+
+  .average-font,
+  .hole-detail-font {
+    font-size: 16px;
+    font-family: var(--font-family-pretendard-medium);
+    font-weight: 500;
+  }
+  .course-detail-body {
+    width: 100%;
+  }
+
+  .average-level {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .average-level-card {
+    height: 120px;
+    width: 31.2%;
+    border-radius: 10px;
+  }
+
+  .grade-circle {
+    width: 60px;
+    height: 60px;
+  }
+
+  .grade-circle-image {
+    width: 60px;
+    height: 60px;
+  }
+
+  .grade-font {
+    font-size: 12px;
+  }
+
+  .ranking-score-font {
+    font-size: 14px;
+  }
+
+  .course-detail-hole-detail-info {
+    gap: 20px;
+  }
+
+  .course-detail-hole-detail-info-box {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .course-detail-hole-detail-info-box-align {
+    width: 100%;
+  }
+
+  .course-detail-font {
+    font-size: 14px;
+    color: #666;
+    font-family: var(--font-family-pretendard-medium);
+    font-weight: 500;
+  }
+
+  .course-detail-meter-font {
+    font-size: 12px;
+  }
+
+  .table-detail-align {
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  .hole-detail-info-box-wrapper {
+    max-width: 100%;
+    overflow-x: auto;
+    padding-top: 3px;
+  }
+
+  .hole-detail-info-table {
+    width: 100%;
+    min-width: 720px;
+  }
+
+  th,
+  td {
+    font-size: 14px;
+    width: 60px;
+    height: 40px;
+  }
+
+  .hole-detail-image-box {
+    width: 100%;
+  }
+}

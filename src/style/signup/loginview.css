@@ -1,0 +1,213 @@
+.login-2 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+
+.login-view {
+  align-items: center;
+  align-self: center;
+  background-color: var(--cultured-pearl);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: 13% 0;
+  padding: 50px;
+  position: relative;
+  width: 33%;
+}
+
+.login-view-title {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 12px;
+  position: relative;
+}
+
+.login-view-body {
+  display: grid;
+  justify-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.input-align {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 55px;
+}
+
+.input-align input {
+  outline: none;
+  /* padding-right: 0; */
+}
+
+.input-align div {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding-right: 20px;
+  justify-content: flex-end;
+  background-color: #fff;
+}
+
+/* 24.11.14 수정 - 추가 */
+.error-box {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+/* 24.11.14 수정 - 추가 */
+/* 에러 메시지 스타일 */
+.error-message {
+  color: var(--monza);
+  font-weight: 700;
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.stay-login-box {
+  align-items: center;
+  display: flex;
+  gap: 4px;
+  margin-top: 2px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.stay-login-box label {
+  line-height: normal;
+}
+
+.login-btn,
+.kakao-btn,
+.naver-btn {
+  align-items: center;
+  display: flex;
+  height: 55px;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+}
+
+.login-btn {
+  background-color: var(--monza);
+}
+
+.login-join-find-btn-align {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  position: relative;
+  margin-top: 2px;
+  margin-bottom: 40px;
+}
+
+.login-join-find-btn {
+  cursor: pointer;
+}
+
+.kakao-btn {
+  background-color: var(--lemon);
+}
+
+.naver-btn {
+  background-color: var(--malachite);
+}
+
+.login-input-box {
+  border: none;
+  width: 100%;
+  height: 100%;
+  padding: 0 20px;
+}
+
+.valign-text-middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 720px 이하일 때 모바일 버전 */
+@media only screen and (max-width: 720px) {
+  .login-2 {
+    width: 100%;
+    max-width: 720px;
+    min-width: 360px;
+  }
+
+  .login-view {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    margin: 17% 0;
+    background-color: #fff;
+  }
+
+  .login-view-title {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .login-view-title-font {
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .login-view-content-font {
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .login-input-box {
+    border: none;
+    width: 100%;
+    background-color: #f5f6f6;
+    font-size: 15px;
+  }
+
+  .login-input-box::placeholder {
+    font-size: 15px;
+  }
+
+  .input-align {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #f5f6f6;
+  }
+
+  .input-align input {
+    outline: none;
+    padding-right: 0;
+  }
+
+  .input-align div {
+    background-color: #f5f6f6;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-right: 20px;
+    justify-content: flex-end;
+  }
+
+  .login-btn,
+  .kakao-btn,
+  .naver-btn {
+    font-size: 16px;
+  }
+}

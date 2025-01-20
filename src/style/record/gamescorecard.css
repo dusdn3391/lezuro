@@ -1,0 +1,174 @@
+.modal {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: white;
+  padding: 40px;
+  border-radius: 20px;
+  max-width: 900px;
+  overflow-y: auto; /* 세로 스크롤 바 활성화 */
+  height: 100%;
+  position: relative;
+  padding: 40px;
+}
+
+.modal_title {
+  border-bottom: 0.5px solid #dddddd;
+  padding-bottom: 33px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.close {
+  width: 14px;
+  cursor: pointer;
+}
+
+.my_card {
+  padding: 28.5px 0px;
+  text-align: left;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.info {
+  width: 100%;
+}
+
+.info table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th,
+td {
+  border: 0.5px solid #dddddd;
+  padding: 18.5px 0px;
+  text-align: center;
+}
+
+.info table th {
+  width: 150px;
+  background-color: #f4f4f4;
+}
+
+.react-info {
+  display: none;
+}
+
+.playing {
+  width: 800px;
+}
+
+.player_name {
+  padding: 20px 0px;
+  text-align: left;
+}
+
+.playing thead th {
+  background-color: #f4f4f4;
+}
+
+.playing tr th {
+  width: 71px;
+}
+
+.playing tr th:nth-child(1) {
+  width: 85px;
+}
+
+.playing tr th:nth-child(1) {
+  width: 85px;
+}
+
+@media (max-width: 720px) {
+  /* 24.12.16 수정 - 추가 */
+  .modal {
+    max-width: 720px;
+    min-width: 360px;
+    /* 24.12.27 수정 - 추가 */
+    padding: 20px;
+  }
+
+  .modal-content {
+    border-radius: 0px;
+    /* 24.12.16 수정 - 추가 */
+    width: 100%;
+    padding: 20px;
+    /* 24.12.27 수정 - 추가 */
+    overflow-y: auto;
+  }
+
+  /* 24.12.16 수정 - 추가 */
+  .modal_title {
+    padding-top: 5.5px;
+    padding-bottom: 25.5px;
+  }
+
+  /* 24.12.16 수정 - 추가 */
+  .modal_title h2 {
+    font-size: 18px;
+  }
+
+  /* 24.12.16 수정 - 추가 */
+  .my_card {
+    padding: 25px 0;
+  }
+
+  .info {
+    display: none;
+  }
+
+  .react-info {
+    display: block;
+  }
+
+  .react-info th {
+    background-color: #f4f4f4;
+    /* 24.12.16 수정 - 추가 */
+    padding: 11px 0px;
+  }
+  .react-info td {
+    text-align: left;
+    padding-left: 20px;
+  }
+
+  /* 24.12.16 수정 - 추가  */
+  .playing {
+    width: 100%;
+    padding-bottom: 50px;
+    /* 24.12.27 수정- 추가 : 가로 스크롤*/
+    overflow-x: auto;
+  }
+
+  /* 24.12.16 수정 - 추가  */
+  .playing-table-div {
+    width: 100%;
+    overflow-x: auto; /* 테이블만 스크롤되도록 설정 */
+  }
+
+  .playing table {
+    min-width: 720px; /* 24.12.16 수정 - 추가 : 테이블의 최소 너비 설정 */
+    white-space: nowrap; /* 테이블 셀들이 한 줄로 유지되도록 설정 */
+  }
+
+  /* 24.12.16 수정 - 추가 */
+  .playing table th,
+  .playing table td {
+    font-size: 14px;
+    color: #222;
+  }
+}

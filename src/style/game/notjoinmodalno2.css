@@ -1,0 +1,71 @@
+.not-join-modal-no2-wrap {
+  align-items: center;
+  background-color: var(--blackwhitewhite);
+  border: 1px solid #dadada;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.not-join-modal-no2-frame {
+  /* width: 14.9%; */
+  /* 24.12.18 수정 */
+  width: 280px;
+  align-items: center;
+  background-color: var(--blackwhitewhite);
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 8px;
+  position: relative;
+}
+
+.not-join-modal-no2-content {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 10px;
+  padding: 24px 25px;
+}
+
+/* .not-join-modal-no2-content p {
+  padding: 2% 0px;
+} */
+
+/* 24.12.10 수정 - 추가 */
+.not-join-modal-div {
+  display: grid;
+  justify-items: center;
+  gap: 5px;
+}
+
+.modal-btn-align {
+  width: 100%;
+}
+
+.submit-btn,
+.cancel-btn {
+  width: 50%;
+  height: 50px;
+  border: none;
+}
+
+.submit-btn {
+  background-color: var(--monza);
+  border-bottom-right-radius: 8px;
+}
+
+.cancel-btn {
+  background-color: var(--nobel);
+  border-bottom-left-radius: 8px;
+}

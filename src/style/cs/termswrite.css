@@ -1,0 +1,27 @@
+@media (max-width: 720px) {
+
+  .terms_title{padding-top:0px;}
+  .title-box,
+  .content-box {
+    border: none;
+    display: block;
+    padding:0px;
+  }
+.content-title{
+    margin-top:17.5px;
+    margin-bottom:17.5px;
+}
+  .title{font-size:18px;
+         padding-top:40px;
+         text-align: center;}
+
+  .content-wrap{
+    padding:0px 20px;
+  }
+
+  .cancel-button,.submit-button{
+    border-radius: 4px;
+    width: 100%;
+    font-size:14px;
+  }
+}

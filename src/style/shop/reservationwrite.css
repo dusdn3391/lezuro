@@ -1,0 +1,536 @@
+.reservation1-2 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+}
+
+.reservation1-wrap {
+  margin: 0px 13.55%;
+  width: 73%;
+  padding-bottom: 4.6%;
+}
+
+.title {
+  padding-top: 7.43%;
+  padding-bottom: 3.64%;
+}
+
+.reservation1-content {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 60px;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+
+.reservation1-shop-info-box {
+  align-items: flex-start;
+  align-self: stretch;
+  border: 1px solid #ddd;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 30px;
+  padding: 40px;
+  position: relative;
+  width: 100%;
+}
+
+.reservation1-shop-info-head {
+  align-items: flex-start;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+}
+
+.reservation1-shop-name {
+  font-size: 30px;
+}
+
+.reservation-shop-map-box {
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 250px;
+  position: relative;
+  width: 100%;
+}
+
+.reservation-shop-map-name-box {
+  align-items: center;
+  align-self: center;
+  background-color: #fff;
+  border: 0.5px solid #999;
+  border-radius: 44px;
+  display: flex;
+  width: fit-content;
+  gap: 5px;
+  justify-content: flex-start;
+  margin-right: 0;
+  padding: 10px 20px;
+  position: relative;
+}
+
+.reservation-shop-map-point {
+  height: 24px;
+  position: relative;
+  width: 24px;
+}
+
+.reservation-info {
+  align-items: center;
+  align-self: stretch;
+  border: 1px solid #ddd;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 50px;
+  padding: 40px 40.5px;
+  position: relative;
+  width: 100%;
+}
+
+.reservation-info-align {
+  align-items: flex-start;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  position: relative;
+  width: 100%;
+}
+
+.reservation-info-input {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 30px;
+  position: relative;
+  width: 100%;
+}
+
+.reservation-info-input-content {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+}
+
+.reservation-info-input-row {
+  border-top: 1px solid #ccc;
+}
+
+.reservation-info-input-row-title {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 48px;
+  justify-content: center;
+  padding: 0px 0px 0px 20px;
+  position: relative;
+  width: 11.2%;
+}
+.resevationi-info-select {
+  background-color: #fafafa;
+  border: 0.5px solid #ddd;
+  height: 50px;
+  position: relative;
+  padding: 15px 20px;
+  width: 50%;
+}
+
+.reservation-info-input-row {
+  align-items: center;
+  align-self: stretch;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  flex: 0 0 auto;
+  padding: 20px 20px 20px 0px;
+  position: relative;
+  width: 100%;
+}
+
+.reservation-info-start-time {
+  align-items: flex-start;
+  align-self: stretch;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  flex: 0 0 auto;
+  padding: 20px 0px;
+  position: relative;
+  width: 100%;
+}
+
+.reservation-info-start-time-title {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 48px;
+  justify-content: center;
+  padding: 0px 0px 0px 20px;
+  position: relative;
+  width: 11.2%;
+}
+.reservation-info-start-time-list {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 10px;
+  position: relative;
+  width: 87.5%;
+}
+.non-select-time {
+  align-items: center;
+  border: 0.5px solid #bbb;
+  background-color: #fff;
+  border-radius: 5px;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  height: 48px;
+  justify-content: center;
+  overflow: hidden;
+  padding: 10px 20px;
+  position: relative;
+  /* 24.12.18 수정 - 추가 */
+  width: 91px;
+}
+
+.selected-time {
+  background-color: #d30f1a1a; /* 선택된 시간의 배경색 변경 */
+}
+
+.reservation-people-number {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: flex-start;
+  position: relative;
+  margin-top: 7.5px;
+  width: 100%;
+  gap: 65px;
+}
+
+.reservation-people-number-title {
+  padding-right: 20px;
+}
+
+.reservation-people-number-count {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  position: relative;
+}
+
+.reservation-people-number-count-btn {
+  align-items: center;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  border-radius: 32px;
+  display: flex;
+  gap: 10px;
+  height: 32px;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  width: 32px;
+}
+
+.reservation-info-guide {
+  align-items: flex-start;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 30px;
+  position: relative;
+  width: 100%;
+}
+
+.reservation-info-guide-content {
+  align-items: flex-start;
+  align-self: stretch;
+  background-color: #f5f6f6;
+  border-radius: 10px;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 4px;
+  justify-content: center;
+  overflow: hidden;
+  padding: 30px;
+  position: relative;
+  width: 100%;
+}
+
+.reservation-info-guide-content-font {
+  display: flex;
+}
+
+.reservation-info-consent {
+  align-items: flex-start;
+  display: grid;
+  flex: 0 0 auto;
+  gap: 30px;
+  position: relative;
+  margin-top: 20px;
+  width: 100%;
+}
+.date {
+  width: 50%;
+  padding: 20px;
+  background-color: #fafafa;
+  border: 0.5px solid #ddd;
+}
+.check-text {
+  display: flex;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  margin-right: 12px;
+}
+
+.custom-checkbox {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.custom-checkbox input[type="checkbox"] {
+  opacity: 0;
+  position: absolute;
+}
+
+.checkmark {
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border: 2px solid #d30f1a;
+  border-radius: 50%;
+  margin-right: 10px;
+  display: inline-block;
+  position: relative;
+}
+
+.custom-checkbox input[type="checkbox"]:checked + .checkmark {
+  background-color: #fff;
+  border-color: #d30f1a;
+}
+
+.custom-checkbox input[type="checkbox"]:checked + .checkmark:after {
+  content: "✔";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #d30f1a;
+  font-size: 14px;
+}
+
+.reservation-write-btn {
+  background-color: #d30f1a;
+  border: none;
+  height: 50px;
+  width: 14.8%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 720px 이하일 때 모바일 버전 */
+@media only screen and (max-width: 720px) {
+  .reservation1-2 {
+    width: 100%;
+    max-width: 720px;
+    min-width: 360px;
+    height: 100%;
+  }
+
+  .reservation1-wrap {
+    width: 100%;
+    padding: 0 5.6%;
+    margin: 0;
+    padding-bottom: 36.2%;
+  }
+  .title {
+    font-size: 18px;
+    text-align: center;
+    width: 100%;
+    padding: 11.5%;
+    margin-top: 3.9%;
+  }
+
+  .reservation1-content {
+    gap: 30px;
+  }
+  .reservation1-shop-info-box {
+    border: none;
+    width: 100%;
+    padding: 0;
+    gap: 20px;
+  }
+
+  .reservation1-shop-name {
+    font-size: 20px;
+  }
+  .reservation1-shop-address {
+    font-size: 16px;
+  }
+
+  .reservation-shop-map-box {
+    height: 300px;
+    width: 100%;
+  }
+
+  .reservation-shop-map-name-box {
+    width: fit-content;
+  }
+
+  .reservation-shop-name {
+    width: 100%;
+  }
+
+  .reservation-info {
+    width: 100%;
+    padding: 0;
+    border: none;
+  }
+
+  /* 24.12.18 수정 */
+  .reservation-info-align {
+    gap: 50px;
+  }
+
+  .reservation-info-input-title {
+    font-size: 18px;
+  }
+
+  .reservation-info-input-content {
+    gap: 20px;
+  }
+  .reservation-info-input-row {
+    border: none;
+    display: grid;
+    width: 100%;
+    padding: 0;
+    flex: 0;
+  }
+
+  .reservation-info-input-row-title,
+  .reservation-info-start-time-title {
+    width: 100%;
+    padding: 0;
+    /* 24.12.18 수정 - 추가 */
+    gap: 6px;
+  }
+
+  .reservation-input-title {
+    font-size: 16px;
+    color: #222;
+  }
+
+  /* 24.12.18 수정 */
+  .date {
+    border: none;
+  }
+
+  .resevationi-info-select {
+    width: 100%;
+    height: 54px;
+    border: none;
+    font-size: 14px;
+  }
+
+  select {
+    font-size: 14px;
+    color: #666;
+  }
+
+  .reservation-info-input-align {
+    margin-top: 20px;
+  }
+
+  .reservation-info-start-time {
+    display: grid;
+    padding: 0;
+    border: none;
+  }
+  .reservation-info-start-time-list {
+    width: 100%;
+  }
+
+  .reservation-people-number {
+    display: grid;
+    gap: 18px;
+  }
+
+  .reservation-people-number-title {
+    font-size: 16px;
+  }
+
+  .reservation-people-number-count-btn-font {
+    font-size: 16px;
+    font-family: var(--font-family-pretendard-regular);
+  }
+
+  .reservation-info-guide {
+    gap: 6px;
+  }
+
+  .frame-7776-1 {
+    padding: 31px 20px;
+    gap: 20px;
+  }
+
+  /* 24.12.18 수정 - 추가 */
+  .reservation-info-guide-content {
+    padding: 20px;
+    gap: 20px;
+
+  }
+
+  .reservation-info-guide-content-font {
+    display: grid;
+  }
+
+  .reservation-info-guide-content-font-align {
+    padding-left: 12px;
+  }
+
+  .reservation-info-consent-title {
+    font-size: 18px;
+  }
+
+  /* 24.12.18 수정 */
+  .reservation-info-consent {
+    gap: 20px;
+    margin-top: 0;
+  }
+
+  /* 24.12.18 수정 */
+  .check-text-detail {
+    text-decoration: underline;
+  }
+  
+  .reservation-write-btn {
+    width: 100%;
+    height: 40px;
+    font-size: 14px;
+  }
+}

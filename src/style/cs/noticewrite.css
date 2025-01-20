@@ -1,0 +1,46 @@
+@media (max-width:720px) {
+    .title {
+        padding: 40px 20px;
+        font-size: 18px;
+        text-align: center;
+      }
+    
+      .content-wrap {
+        padding: 20px;
+        padding-top:7px;
+      }
+      .content-box, .title-box{
+        display: block;
+        border:none;
+        padding:0px;
+      }
+    
+    .title-box input{
+        width:100%;
+    }
+    
+      .content-box input {
+        width:100%;
+    }
+    
+    .img-pick{
+        padding:0px;
+        width:100%;
+    }
+      .content-title {
+        display: block;
+        padding:17.5px 0px;
+      }
+    
+      .write-wrap {
+        border: none;
+        padding: 0px;
+      }
+    
+      .cancel-btn ,.frame-7923-3{
+        height:40px;
+    }
+    .text_label-31,.text_label-31{
+       font-size: 14px;
+    }
+}

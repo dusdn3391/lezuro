@@ -1,0 +1,130 @@
+.reservation2-2 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+}
+.title {
+  display: none;
+}
+
+.reservation-content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  margin-top: 11.6%;
+  margin-bottom: 9.3%;
+  position: relative;
+  width: 73%;
+}
+
+.reservation-content-wrap {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 100px;
+  position: relative;
+  width: 100%;
+}
+
+.reservation-check-image {
+  height: 180px;
+  position: relative;
+  width: 180px;
+}
+
+.resevation-progress-info {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 50px;
+  position: relative;
+  width: 100%;
+}
+
+.resevation-progress-info-first {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.resevation-progress-info-end {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.end-middle {
+  margin-bottom: 18px;
+}
+
+.check-reservation-btn {
+  background-color: #d30f1a;
+  border: none;
+  /* height: 50px;
+  width: 14.8%; */
+  /* 24.12.19 수정 */
+  width: 300px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 720px 이하일 때 모바일 버전 */
+@media only screen and (max-width: 720px) {
+  .reservation2-2 {
+    width: 100%;
+    max-width: 720px;
+    min-width: 360px;
+    height: 100%;
+  }
+
+  .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    width: 100%;
+    padding: 11.5%;
+  }
+  .reservation-content {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .reservation-content-wrap {
+    gap: 30px;
+    width: 100%;
+  }
+
+  .reservation-check-image {
+    width: 80px;
+    height: 80px;
+  }
+
+  .resevation-progress-info {
+    width: 100%;
+  }
+  .resevation-progress-info-first {
+    font-size: 24px;
+  }
+
+  .resevation-progress-info-end {
+    font-size: 16px;
+    gap: 5px;
+  }
+  .check-reservation-btn {
+    width: 100%;
+    font-size: 14px;
+    /* 24.12.19 수정 */
+    height: 40px;
+  }
+}

@@ -1,0 +1,107 @@
+.signup1-2 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+
+.signup1-wrap {
+  align-items: center;
+  background-color: var(--cultured-pearl);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-top: 11%;
+  margin-bottom: 28%;
+  padding: 50px;
+  position: relative;
+  width: 41.7%;
+}
+
+.signup1-input-align {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.signup1-input-box {
+  border: none;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  height: 80px;
+  width: 100%;
+  font-weight: 500;
+}
+
+.cert-btn {
+  align-items: center;
+  background-color: var(--monza);
+  display: flex;
+  height: 55px;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+}
+
+.cert-btn::placeholder {
+  font-size: 20px;
+  color: #999;
+  font-weight: 500;
+}
+
+/* 720px 이하일 때 모바일 버전 */
+@media only screen and (max-width: 720px) {
+  .signup1-2 {
+    width: 100%;
+    max-width: 720px;
+    min-width: 360px;
+  }
+
+  .signup1-wrap {
+    width: 100%;
+    padding: 20px;
+    margin-top: 6%;
+    margin-bottom: 60%;
+    background-color: #fff;
+    gap: 30px;
+  }
+
+  .signup1-wrap-title {
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .signup1-input-align {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .signup1-input-box {
+    border: none;
+    width: 100%;
+    background-color: #f5f6f6;
+    font-size: 14px;
+    height: 55px;
+  }
+
+  .signup1-input-box::placeholder {
+    font-size: 14px;
+    color: #999;
+    font-weight: 500;
+  }
+
+  .cert-btn {
+    font-size: 16px;
+    font-weight: 600;
+    height: 55px;
+  }
+}

@@ -1,0 +1,489 @@
+.tournaments-2 {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+  width: 100%;
+}
+
+.title {
+  width: 73.5%;
+  padding-top: 5.42%;
+  padding-bottom: 2.66%;
+}
+
+.select-box {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 30px;
+  position: relative;
+  width: 73%;
+  height: 120px;
+  background-color: var(--cultured-pearl);
+  border-radius: 5px;
+}
+
+/* 24.11.14 수정 */
+select {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+}
+.flipped {
+  transform: rotate(180deg);
+}
+.select-style {
+  align-items: center;
+  background-color: #fff;
+  display: flex;
+  height: 60px;
+  justify-content: center;
+  padding: 0px 20px;
+  position: relative;
+  width: 17.82%;
+}
+
+.select-text {
+  border: none;
+}
+
+.input-style {
+  background-color: #fff;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding: 0px 20px;
+}
+
+.input-text {
+  width: 100%;
+  border: none;
+  outline: none;
+}
+
+.search-btn-10 {
+  height: 24px;
+  position: relative;
+  width: 24px;
+}
+
+/* 24.11.22 수정 - width 수정, border 추가, margin-top 추가, padding-bottom 추가 */
+.content {
+  /* width: 100%; */
+  border: 1px solid #ddd;
+  width: 73%;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
+  padding-bottom: 40px;
+}
+
+.game_tab {
+  width: 100%;
+  /* margin-top: 30px; */
+  display: flex;
+  justify-content: center;
+}
+
+/* 24.11.22 수정 - width 수정 */
+.tab {
+  line-height: 100%;
+  width: 25%;
+  padding: 23px 0px;
+  text-align: center;
+  cursor: pointer;
+  background-color: #f5f6f6;
+}
+
+.tab:hover {
+  background-color: #fff;
+}
+
+/* 24.11.22 수정 - font-weight 삭제 */
+.tab.active {
+  border: 1px solid #ddd;
+  margin-bottom: -2px;
+  border-bottom: 2px solid #fff;
+  background-color: #fff;
+  position: relative;
+  z-index: 2;
+  color: #222;
+}
+
+/* 24.11.22 수정 - width 수정, border 삭제 */
+.card_box {
+  /* border: 1px solid #dddddd; */
+  /* width: 73%; */
+  width: 100%;
+}
+
+.table_box {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 40px;
+  row-gap: 50px;
+  column-gap: 2%;
+  justify-content: flex-start;
+}
+
+.card {
+  position: relative;
+  width: 32%;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+/* 24.11.21 수정 - 추가 */
+.disabled-card {
+  /* pointer-events: none; 클릭 차단 */
+  opacity: 0.6; /* 투명도 설정 */
+  cursor: not-allowed; /* 마우스 커서 변경 */
+}
+
+.photo-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  /* height: 44.5%; */
+  /* 24.12.18 수정 */
+  height: 250px;
+}
+
+.photo-header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  top: 28px;
+  position: absolute;
+  padding: 0 19px;
+}
+
+.status-box {
+  width: 65px;
+  height: 30px;
+  display: flex;
+  /* Flexbox 컨테이너로 설정 */
+  justify-content: center;
+  /* 가로 중앙 정렬 */
+  align-items: center;
+  /* 세로 중앙 정렬 */
+  text-align: center;
+  border-radius: 18.5px;
+}
+
+.status-box.game {
+  background-color: #d30f1a;
+  /* Red for game (모집중) */
+}
+
+.status-box.competition {
+  background-color: #184199;
+  /* Blue for competition (진행중) */
+}
+
+.status-box.ended {
+  background-color: #333333;
+  /* Black for ended (종료) */
+}
+
+.card-image {
+  width: 100%;
+  height: 250px;
+  /* height: 100%; */
+  display: block;
+  /* Block으로 설정하여 상하 마진 제거 */
+  object-fit: cover;
+  /* 24.12.18 수정 - 추가 */
+  border-bottom: 1px solid #ddd;
+}
+
+.card-info {
+  padding: 33px 30px;
+}
+
+.card-info h2 {
+  margin-bottom: 30px;
+}
+
+.card-info div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.card-info div span {
+  /* width: 48px; */
+  padding-right: 5.66%;
+}
+
+.card-info div p {
+  margin: 2px;
+  padding: 0;
+}
+
+.card-info div:nth-child(4) {
+  display: flex;
+  align-items: flex-start;
+}
+
+.card-info div:nth-child(4) div {
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  /* 세로로 정렬 */
+  align-items: flex-start;
+  /* 왼쪽 정렬, 필요에 따라 조정 */
+  /* 24.12.18 수정 - 추가 */
+  margin-bottom: 0px !important;
+}
+.condition {
+  margin-bottom: 0px !important;
+}
+.paging {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.paging-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.paging-button img {
+  width: 20px;
+  height: 20px;
+}
+
+/* 24.11.20 수정 */
+.paging-numbers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* 24.11.20 수정 */
+.paging-number {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* margin: 0 15px; */
+  cursor: pointer;
+  background-color: #eeeeee;
+}
+
+.paging-number.active {
+  background-color: #d30f1a;
+  color: white;
+}
+
+/* 720px 이하일 때 모바일 버전 */
+@media only screen and (max-width: 720px) {
+  .tournaments-2 {
+    width: 100%;
+    max-width: 720px;
+    min-width: 360px;
+    height: 100%;
+  }
+
+  .title {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+    padding: 8.5%;
+    margin-top: 3%;
+  }
+
+  .select-box {
+    background-color: #fff;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 20px;
+    gap: 6px;
+  }
+
+  .select-style,
+  .input-style {
+    width: 100%;
+    border: 1px solid #ddd;
+  }
+
+  .select-text,
+  .input-text {
+    width: 100%;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .select-text option {
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .content {
+    width: 100%;
+    /* 24.12.18 수정 추가  */
+    border: none;
+  }
+
+  .tab {
+    width: 22.25%;
+    font-size: 14px;
+    border-bottom: 1px solid #ddd;
+  }
+  .tab:active {
+    font-weight: 700;
+  }
+
+  .card_box {
+    width: 100%;
+    border-top: none;
+  }
+  .table_box {
+    padding: 8%;
+    row-gap: 10px;
+    /* 24.12.18 수정 - 정렬 수정 */
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+  }
+
+  .card {
+    /* width: 49%; */
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    overflow: visible;
+  }
+
+  /* 24.12.18 수정 - 추가 */
+  .photo-card {
+    height: 155px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+  }
+
+  .photo-header {
+    top: 10px;
+    padding: 0 10px;
+  }
+
+  .card-image {
+    width: 100%;
+    /* height: 100%; */
+    /* 24.12.18 수정 - 추가 */
+    height: 155px;
+    /* 24.12.17 수정 */
+    border-radius: 10px;
+    /* 24.12.18 수정 - 추가 */
+    border: 1px solid #ddd;
+  }
+
+  .card-info {
+    padding: 10px;
+    /* margin-bottom: 30px; */
+  }
+
+  .card-info h2 {
+    margin-bottom: 9.5%;
+    font-size: 18px;
+    /* 24.12.18 수정 - 추가 : 제목 넘칠 때 ... 로 설정*/
+    display: -webkit-box; /* 플렉스 컨테이너로 설정 */
+    -webkit-box-orient: vertical; /* 수직으로 텍스트 정렬 */
+    -webkit-line-clamp: 1; /* 최대 줄 수를 1줄로 제한 */
+    overflow: hidden; /* 넘치는 텍스트를 숨김 */
+    text-overflow: ellipsis; /* 넘치는 부분에 ... 표시 */
+    word-wrap: break-word; /* 단어를 줄바꿈 */
+    line-height: 1.4; /* 줄 간격 */
+    height: calc(1.4em * 1); /* 최대 높이 설정 (줄 간격 * 줄 수) */
+  }
+
+  .card-info span {
+    font-size: 12px;
+  }
+
+  .card-info p {
+    font-size: 12px;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .card-info div:nth-child(3) span,
+  .card-info div:nth-child(4) span {
+    padding-top: 2.5%;
+  }
+
+  .card-info div:nth-child(3) p {
+    width: 61%;
+  }
+  .card-info div:nth-child(3) {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  /* 24.12.18 수정 - 추가 */
+  .card-info div:nth-child(5) {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .condition {
+    margin-bottom: 0px;
+  }
+
+  /* 24.12.18 수정 - 추가 */
+  .condition p {
+    white-space: pre-line; /* 줄바꿈 태그(<br>) 적용 */
+  }
+
+  /* 24.12.18 수정 - 추가 */
+  .paging {
+    margin-top: 0;
+    gap: 30px;
+    width: 100%;
+    width: 30px;
+    height: 30px;
+  }
+
+  /* 24.12.18 수정 - 추가 */
+  .paging-button {
+    gap: 30px;
+    margin: 0;
+  }
+
+  /* 24.12.18 수정 - 추가 */
+  .paging-numbers {
+    gap: 12px;
+  }
+
+  /* 24.12.18 수정 - 추가 */
+  .paging-number {
+    width: 30px;
+    height: 30px;
+  }
+}

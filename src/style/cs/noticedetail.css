@@ -1,0 +1,221 @@
+.announcementsdetails {
+  background-color: var(--blackwhitewhite);
+  position: relative;
+  width: 100%;
+}
+
+.frame-7913 {
+  /* align-items: flex-start; */
+  /* 24.12.19 수정 - 추가 */
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0px 13.5%;
+  position: relative;
+  margin-bottom: 227px;
+}
+
+.title {
+  padding-top: 104px;
+  padding-bottom: 50px;
+  /* 24.12.19 수정 - 추가 */
+  width: 100%;
+}
+
+.notice-detail {
+  width: 100%;
+}
+
+.frame-7754-2 {
+  align-items: flex-start;
+  align-self: stretch;
+  border-color: var(--greygrey-900);
+  border-top-style: solid;
+  border-top-width: 1px;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 16px;
+  padding: 40px 0px;
+  position: relative;
+  width: 100%;
+}
+
+/* .text-1934 {
+  height: 35px;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  white-space: nowrap;
+  width: 658px;
+} */
+
+/* 24.12.19 수정 */
+.frame-7835-2 {
+  width: 100%;
+  align-items: center;
+  display: flex;
+  /* flex: 0 0 auto; */
+  gap: 10px;
+  /* justify-content: center; */
+  justify-content: flex-start;
+  position: relative;
+}
+
+/* .frame-7835-item-1 {
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+} */
+
+/* .rectangle-50927 {
+  background-color: var(--mountain-mist);
+  height: 11px;
+  position: relative;
+  width: 1px;
+} */
+
+.frame-7836-6 {
+  padding: 40px;
+  border: 1px solid #ddd;
+}
+
+.lorem-ipsum-dolor-si-7 {
+  width: 100%;
+}
+
+.image-container {
+  padding-top: 20px;
+  width: 100%;
+}
+
+.image-container img {
+  width: 100%;
+}
+
+/* .frame-7912 {
+  align-items: flex-start;
+  align-self: stretch;
+  justify-content: center;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 50px;
+  margin-top: 30px;
+  position: relative;
+  width: 100%;
+}
+
+.frame-7923-3 {
+  align-items: center;
+  background-color: var(--monza);
+  display: flex;
+  gap: 10px;
+  height: 50px;
+  justify-content: center;
+  padding: 18px 66px;
+  position: relative;
+  width: 150px;
+}
+
+.text_label-31 {
+  letter-spacing: 0;
+  line-height: normal;
+  margin-left: -22.5px;
+  margin-right: -22.5px;
+  margin-top: -0.5px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+} */
+
+/* 24.12.19 수정 - 추가 */
+.to-go-list {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  width: 200px;
+  height: 50px;
+  margin-top: 50px;
+  border: none;
+  background-color: #d30f1a;
+  cursor: pointer;
+}
+
+@media (max-width: 720px) {
+  /* 24.12.19 수정 - 추가 */
+  .announcementsdetails {
+    width: 100%;
+    max-width: 720px;
+    min-width: 360px;
+    height: 100%;
+  }
+  /* 24.12.19 수정 - 추가 */
+  .frame-7913 {
+    padding: 0 20px;
+  }
+  .title {
+    text-align: center;
+    font-size: 18px;
+    padding: 30px;
+  }
+
+  /* 24.12.19 수정 */
+  .notice-detail {
+    padding: 0;
+  }
+
+  .frame-7754-2 {
+    border-top: none;
+    padding-top: 0px;
+  }
+
+  .text-1934 {
+    font-size: 20px;
+  }
+
+  /* 24.12.20 수정 - 추가 */
+  .frame-7835-2 {
+    justify-content: space-between;
+  }
+
+  /* 24.12.20 수정 - 추가  */
+  .slash {
+    display: none;
+  }
+
+  /* .frame-7912 {
+    padding: 0px 20px;
+  } */
+
+  .frame-7835-item-1 {
+    font-size: 16px;
+  }
+
+  /* 24.12.20 수정 - 추가 */
+  .frame-7835-item-1:nth-child(3) {
+    display: none;
+  }
+
+  /* 24.12.19 수정 - 추가 */
+  .frame-7836-6 {
+    border: none;
+    padding: 0;
+  }
+
+  /* 24.12.19 수정 - 추가 */
+  .to-go-list {
+    width: 100%;
+    padding: 15px 0px;
+    width: 100%;
+    text-align: center;
+    border-radius: 4px;
+    margin-top: 36px;
+    height: 40px;
+    font-size: 14px;
+  }
+}

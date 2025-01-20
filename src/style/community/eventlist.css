@@ -1,0 +1,343 @@
+.events-2 {
+  width: 100%;
+}
+
+.title_center {
+  align-items: center;
+  padding: 0px 13.5%;
+  justify-content: space-between;
+  display: flex;
+  padding-top: 104px;
+}
+
+.event-register {
+  width: 68px;
+  border-radius: 3px;
+  text-align: center;
+  padding: 10px;
+  color: #fff;
+  background-color: #d30f1a;
+}
+
+.events_wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 120px;
+  width: 100%;
+  padding: 0px 13.5%;
+}
+
+.events_tab {
+  display: flex;
+  justify-content: center;
+  /* margin-top: 40px; */
+  /* 24.12.19 수정 */
+  margin-top: 67px;
+  width: 100%;
+}
+
+.tab {
+  /* line-height: 100%; */
+  width: 33.33333%;
+  padding: 23px 0px;
+  text-align: center;
+  cursor: pointer;
+  color: #666666;
+  background-color: #f5f6f6;
+}
+
+.tab:hover {
+  background-color: #fff;
+}
+
+.tab.active {
+  width: 33.3333%;
+  border: 1px solid #ddd;
+  margin-bottom: -2px;
+  background-color: #fff;
+  border-bottom: 2px solid #fff;
+  position: relative;
+  z-index: 2;
+  color: #222222;
+  /* 24.12.19 수정 - 추가 */
+  font-family: var(--font-family-pretendard-bold);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.frame-7820 {
+  padding: 40px;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* grid-gap: 40px; */
+  /* 24.12.19 수정 */
+  row-gap: 50px;
+  column-gap: 40px;
+}
+
+.frame-782 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  /* 24.12.19 수정 - 추가 */
+  border: 1px solid #ddd;
+}
+
+/* 24.11.22 수정 - 추가 */
+.disabled-card {
+  /* pointer-events: none; 클릭 차단 */
+  opacity: 0.6;
+  /* 투명도 설정 */
+  cursor: not-allowed;
+  /* 마우스 커서 변경 */
+}
+
+/* 24.12.19 수정 - 추가 */
+.label-box {
+  width: 97px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.label-progress {
+  background-color: #d30f1a;
+  /* color: white; */
+  padding: 15px 30px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  border-radius: 30px;
+}
+
+.label-completed {
+  background-color: #444444;
+  /* color: white; */
+  padding: 15px 30px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  border-radius: 30px;
+}
+
+.mask-group-2 {
+  height: 330px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+}
+
+.frame-7813-2 {
+  align-items: flex-start;
+  align-self: stretch;
+  /* background-color: var(--blackwhitewhite);
+  border: 1px solid;
+  border-color: var(--alto); */
+  /* 24.12.19 수정 - 추가 */
+  border-top: 1px solid #ddd;
+  border-radius: 0px 0px 20px 20px;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px 30px;
+  position: relative;
+  width: 100%;
+}
+
+/* 24.11.14 수정 - 전반적인 수정 */
+.text-283 {
+  /* align-self: stretch;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative; */
+  display: -webkit-box;
+  /* 플렉스 컨테이너로 설정 */
+  -webkit-box-orient: vertical;
+  /* 수직으로 텍스트 정렬 */
+  -webkit-line-clamp: 1;
+  /* 최대 줄 수를 3줄로 제한 */
+  overflow: hidden;
+  /* 넘치는 텍스트를 숨김 */
+  text-overflow: ellipsis;
+  /* 넘치는 부분에 ... 표시 */
+  word-wrap: break-word;
+  /* 단어를 줄바꿈 */
+  line-height: 1.4;
+  /* 줄 간격 */
+  height: calc(1.4em * 1);
+  /* 최대 높이 설정 (줄 간격 * 줄 수) */
+}
+
+/* .text-28-2 {
+  align-self: stretch;
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+} */
+
+.pagination-controls {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 50px;
+  /* margin-bottom: 40px !important; */
+}
+
+.page-numbers {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+/* 24.11.22 수정 - 추가 */
+.page-number {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #eeeeee;
+  cursor: pointer;
+}
+
+/* 24.11.22 수정 */
+.page-number.active {
+  background-color: #d30f1a;
+  color: white;
+}
+
+/* 24.11.22 수정 - 추가 */
+.page-number:hover {
+  background-color: #eeeeee;
+}
+
+.pagination-arrow {
+  cursor: pointer;
+}
+
+.pagination-arrow.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.pagination-arrow.flipped {
+  transform: rotate(180deg);
+}
+
+@media (max-width: 720px) {
+  /* 24.12.19 수정 - 추가 */
+  .events-2 {
+    width: 100%;
+    max-width: 720px;
+    min-width: 360px;
+    height: 100%;
+  }
+
+  /* 24.11.14 수정 - 추가 */
+  .title_center {
+    padding: 0;
+    /* 24.11.22 수정 - 추가 */
+    justify-content: center;
+  }
+
+  /* 24.11.14 수정 - title_center 와 분리 */
+  .title {
+    text-align: center;
+    font-size: 18px;
+    padding-top: 40px;
+  }
+
+  .events_wrap {
+    padding: 0px 20px;
+  }
+
+  .events_tab {
+    margin-top: 50px;
+  }
+
+  .tab {
+    font-size: 14px;
+  }
+
+  .frame-7820 {
+    padding: 20px 0px;
+    border: none;
+    border-top: 1px solid #dddddd;
+  }
+
+  .grid-container {
+    grid-gap: 10px;
+  }
+
+  .frame-782 {
+    border-radius: 0px;
+    /* 24.12.19 수정 - 추가  */
+    border: none;
+  }
+
+  .label-box {
+    padding: 11px 16.5px !important;
+    font-size: 12px;
+    top: 10px !important;
+    left: 10px !important;
+    /* 24.12.19 수정 - 추가 */
+    width: 67px;
+    height: 30px;
+  }
+
+  .mask-group-2 {
+    height: 155px;
+    border-radius: 10px;
+    /* 24.12.19 수정 - 추가 */
+    border: 1px solid #ddd;
+  }
+
+  .frame-7813-2 {
+    border: none;
+    padding: 10px 5px;
+    /* 24.12.19 수정 - 추가 */
+    gap: 10px;
+  }
+
+  /* 24.12.19 수정 */
+  .text-28-2 {
+    font-size: 12px;
+    font-family: var(--font-family-pretendard-regular);
+    font-weight: 400;
+
+  }
+
+  .text-283 {
+    font-size: 18px;
+  }
+
+  /* 24.12.19 수정 - 추가 */
+  .pagination-controls {
+    gap: 30px;
+  }
+
+  /* 24.12.19 수정 - 추가 */
+  .page-numbers {
+    gap: 12px;
+  }
+
+  /* 24.12.19 수정 - 추가 */
+  .page-number {
+    width: 30px;
+    height: 30px;
+  }
+}

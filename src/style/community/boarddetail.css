@@ -1,0 +1,374 @@
+.communitydetails-2 {
+  background-color: var(--blackwhitewhite);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+}
+
+/* 24.11.26 수정 */
+.frame-7913 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0px 13.5%;
+  position: relative;
+  margin-bottom: 227px;
+}
+
+.title {
+  width: 100%;
+  padding-top: 104px;
+  padding-bottom: 50px;
+}
+
+.board-detail {
+  width: 100%;
+}
+
+/* 24.11.26 수정 - class 수정 및 정렬 수정 */
+.board-detail-top {
+  /* align-items: flex-start; */
+  /* align-self: stretch; */
+  border-top: 1px solid #222;
+  display: flex;
+  /* flex: 0 0 auto; */
+  flex-direction: column;
+  gap: 16px;
+  padding: 40px 0px;
+  /* position: relative; */
+  width: 100%;
+}
+
+/* 24.11.26 수정 - 추가 */
+.notice-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* 24.11.26 수정 - 추가 */
+.notice-info-first {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* 24.11.26 수정 - 추가 */
+.notice-info-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.frame-7836-6 {
+  padding: 40px;
+  border: 1px solid #dddddd;
+}
+
+.frame-7836-6 img {
+  width: 100%;
+  padding: 30px 0px;
+}
+
+.lorem-ipsum-dolor-si-7,
+.lorem-ipsum-dolor-si-8 {
+  width: 100%;
+}
+
+/* 24.11.26 수정 - 추가 */
+.to-go-list {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  width: 200px;
+  height: 50px;
+  margin-top: 50px;
+  border: none;
+  background-color: #d30f1a;
+  cursor: pointer;
+}
+
+.reply-content {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 0px;
+}
+
+.reply-write {
+  background-color: #fafafa;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.reply-textarea {
+  width: 100%;
+  background-color: #fafafa;
+  border: none;
+  height: 49px;
+  outline: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  resize: none;
+}
+
+.reply-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.cancel-button {
+  background-color: #999;
+  border: none;
+  width: 90px;
+  height: 48px;
+  /* 24.12.19 수정 */
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+}
+
+.submit-button {
+  background-color: #184199;
+  border: none;
+  width: 90px;
+  height: 48px;
+  /* 24.12.19 수정 */
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+}
+
+/* 24.11.26 수정 */
+.reply-view {
+  padding: 20px 0;
+  border-radius: 5px;
+}
+
+.reply-count {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.divider {
+  border-top: 1px solid #dddddd;
+  margin: 10px 0;
+}
+
+.comment {
+  padding: 15px 0;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.comment-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+}
+
+.comment-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.comment-author {
+  font-weight: bold;
+}
+
+.comment-date {
+  color: #888888;
+}
+
+.comment-body {
+  padding: 20px;
+  /* 24.12.19 수정 */
+  background-color: #fafafa;
+  margin-top: 30px;
+}
+
+.comment-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  width: 100%;
+  /* 24.12.19 수정 */
+  background-color: #fafafa;
+  padding: 20px;
+}
+
+/* 24.11.26 수정 */
+.comment-edit-button,
+.delete-button {
+  background-color: #999;
+  border: none;
+  width: 90px;
+  height: 50px;
+  /* 24.12.19 수정 */
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+}
+
+/* 24.11.26 수정 */
+.delete-button {
+  background-color: #d30f1a;
+}
+
+.comment-body textarea {
+  border: none;
+  width: 100%;
+  /* 24.12.19 수정 */
+  background-color: #fafafa;
+  height: 100%;
+}
+
+@media (max-width: 720px) {
+  /* 24.12.19 수정 - 추가 */
+  .communitydetails-2 {
+    width: 100%;
+    max-width: 720px;
+    min-width: 360px;
+    height: 100%;
+  }
+
+  .frame-7913 {
+    padding: 0px 20px;
+    /* 24.12.19 수정 - 추가 */
+    margin-bottom: 197px;
+  }
+  .title {
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 0px;
+    font-size: 18px;
+  }
+  .frame-7836-6 {
+    padding: 0px;
+    border: none;
+  }
+  /* 24.11.26 수정 - class 수정 */
+  .board-detail-top {
+    border: none;
+  }
+
+  /* 24.11.26 수정 - class 수정 */
+  .board-detail-title {
+    font-size: 20px;
+  }
+
+  /* 24.11.26 수정 - class 수정 */
+  .notice-info {
+    font-size: 16px;
+    display: block;
+  }
+
+  /* 24.12.19 수정 - 추가  */
+  .notice-info-first {
+    flex-wrap: wrap;
+  }
+
+  .frame-7835-item-1:nth-child(1) {
+    /* margin-bottom: 10px; */
+    display: block;
+    /* 24.12.20 수정 - 추가 */
+    width: 100%;
+  }
+
+  /* 24.11.26 수정 - class 수정 */
+  .slash {
+    display: none;
+  }
+
+  .separ {
+    /* width: 120px; */
+    float: left;
+    /* 24.12.20 수정 - 추가 */
+    width: 60%;
+  }
+
+  /* 24.12.20 수정 - 추가 */
+  .frame-7835-item-1:nth-child(4) {
+    width: 35%;
+    text-align: right;
+  }
+
+  /* 24.11.26 수정 - class 수정 */
+  .to-go-list {
+    width: 100%;
+    padding: 15px 0px;
+    width: 100%;
+    text-align: center;
+    /* 24.12.19 수정 - 추가 */
+    border-radius: 4px;
+    margin-top: 36px;
+    height: 40px;
+    font-size: 14px;
+  }
+
+  .reply-write {
+    background-color: #fff;
+    padding: 0px;
+    /* 24.12.19 수정 - 추가 */
+    margin-bottom: 60px;
+  }
+  .reply-view {
+    padding: 0px;
+  }
+
+  /* 24.12.19 수정 - 추가  */
+  .reply-count {
+    margin-bottom: 15px;
+  }
+
+  /* 24.12.19 수정 - 추가 */
+  .comment {
+    display: grid;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .reply-textarea {
+    height: 150px;
+    /* 24.12.19 추가 */
+    border: 1px solid #ccc;
+  }
+
+  .reply-buttons {
+    justify-content: center;
+  }
+
+  .cancel-button {
+    width: 50%;
+    /* 24.12.19 수정 - 추가 */
+    height: 40px;
+  }
+  .submit-button {
+    width: 50%;
+    /* 24.12.19 수정 - 추가 */
+    height: 40px;
+  }
+  .comment-body {
+    height: 200px;
+    /* 24.12.19 수정 - 추가 */
+    margin-top: 0;
+    padding: 25px 30px;
+  }
+  .comment-actions {
+    justify-content: center;
+    background-color: #fff;
+    padding: 0px;
+  }
+
+  .comment-edit-button {
+    width: 50%;
+  }
+  .delete-button {
+    width: 50%;
+  }
+}

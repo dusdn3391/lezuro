@@ -1,0 +1,329 @@
+.announcements-2 {
+  align-items: center;
+  background-color: var(--blackwhitewhite);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+}
+
+.title {
+  width: 100%;
+  padding: 0px 13.5%;
+  padding-top: 104px;
+}
+
+.register_contact {
+  width: 100%;
+  padding: 0px 13.5%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* .register_contact button {
+  border: none;
+  background-color: #d30f1a;
+  color: #fff;
+  padding: 13.5px 45.5px;
+} */
+
+/* 24.11.22 수정 */
+.select-box {
+  align-items: center;
+  display: flex;
+  margin-top: 50px;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 30px;
+  position: relative;
+  width: 73%;
+  height: 120px;
+  background-color: #f5f6f6;
+  border-radius: 5px;
+}
+
+.select-style {
+  align-items: center;
+  background-color: #fff;
+  display: flex;
+  height: 60px;
+  justify-content: center;
+  padding: 0px 20px;
+  position: relative;
+  width: 17.82%;
+}
+
+select {
+  width: 100%;
+}
+
+.select-text {
+  border: none;
+}
+
+.input-style {
+  background-color: #fff;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding: 0px 20px;
+}
+
+.input-text {
+  width: 100%;
+  border: none;
+  outline: none;
+}
+
+.search-btn-10 {
+  height: 24px;
+  position: relative;
+  width: 24px;
+}
+
+/* 24.11.22 수정 */
+.container {
+  width: 100%;
+  padding: 30px 13.5%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 29.5px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+.container thead tr th {
+  background-color: #f5f6f6;
+  padding: 28.5px 0px;
+}
+
+td img {
+  display: none;
+}
+
+/* 각 열의 너비 조정 */
+/* 24.12.19 수정 - 추가 */
+.col-number {
+  width: 10%; /* 번호 */
+}
+
+/* 24.12.19 수정 - 추가 */
+.col-title {
+  width: 60%; /* 제목 */
+}
+
+/* 24.12.19 수정 - 추가 */
+.col-date {
+  width: 20%; /* 작성일 */
+}
+
+/* 24.12.19 수정 - 추가 */
+.col-views {
+  width: 10%; /* 조회 */
+}
+
+.pagination-controls {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  /* 24.12.19 수정 - 추가 */
+  gap: 20px;
+  margin-top: 50px;
+  /* margin-bottom: 40px !important; */
+  /* 24.12.19 수정 - 추가 */
+  margin-bottom: 77px;
+}
+
+/* 24.11.22 수정 */
+.page-numbers {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+/* 24.11.18 수정 - 색상 추가 */
+.page-number {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  /* 24.12.19 수정 - 배경색 변경  */
+  background-color: #eeeeee;
+  cursor: pointer;
+}
+
+/* 24.11.18 수정 */
+.page-number.active {
+  background-color: #d30f1a;
+  color: white;
+}
+
+/* 24.12.09 수정 - 추가 */
+.page-number:hover {
+  background-color: #eeeeee;
+}
+
+.pagination-arrow {
+  cursor: pointer;
+}
+
+.pagination-arrow.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.pagination-arrow.flipped {
+  transform: rotate(180deg);
+}
+
+@media (max-width: 720px) {
+  /* 24.12.19 수정 - 추가 */
+  .announcements-2 {
+    width: 100%;
+    max-width: 720px;
+    min-width: 360px;
+    height: 100%;
+  }
+
+  .title {
+    text-align: center;
+    font-size: 18px;
+    padding: 40px;
+  }
+  .register_contact {
+    width: 100%;
+    padding: 0px 20px;
+  }
+
+  /* .register_contact button {
+    width: 100%;
+    border-radius: 4px;
+    font-size: 14px;
+  } */
+
+  .select-box {
+    background-color: #ffffff;
+    flex-direction: column;
+    /* padding: 0px;
+    gap: 10px; */
+    /* 24.12.19 수정 - 추가 */
+    margin-top: 0;
+    width: 100%;
+    padding: 0 20px;
+    gap: 6px;
+    margin-bottom: 30px;
+  }
+
+  /* 24.12.19 수정 - 추가 */
+  .select-style,
+  .input-style {
+    width: 100%;
+    height: 54px;
+    border: 1px solid #ddd;
+  }
+
+  /* 24.12.19 수정 - 추가 */
+  .select-text,
+  .input-text {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+  }
+
+  /* 24.12.19 수정 - 추가 */
+  .container {
+    padding: 20px;
+  }
+  .container thead {
+    display: none;
+  }
+
+  /* 24.12.19 수정 - 추가 */
+  .table-tr {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+  }
+
+  /* 24.12.19 수정 - 추가 */
+  .table-tr td {
+    padding: 10px 0px;
+    padding-right: 12px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    border: none;
+  }
+
+  /* 24.12.19 수정 - 추가 */
+  .table-tr td[data-label="번호"] {
+    order: 1;
+    width: 10%;
+    color: #222;
+    text-align: left;
+  }
+
+
+  /* 24.12.19 수정 - 추가 */
+  .table-tr td[data-label="제목"] {
+    order: 2;
+    width: 90%;
+    color: #222;
+    font-family: var(--font-family-pretendard-regular);
+    text-align: left;
+  }
+
+  /* 24.12.19 수정 - 추가 */
+  .table-tr td[data-label="조회"] {
+    order: 4;
+    width: 50%;
+    justify-content: flex-end;
+  }
+
+  /* 24.12.19 수정 - 추가 */
+  .table-tr td[data-label="작성일"] {
+    margin-left: 10%;
+    order: 3;
+    width: 40%;
+    justify-content: flex-start;
+  }
+
+  td img {
+    display: inline;
+    margin-right: 6px;
+  }
+
+  .margin-date {
+    margin-left: 35px;
+  }
+
+  /* 24.12.19 수정 - 추가 */
+  .pagination-controls {
+    gap: 30px;
+    margin-bottom: 77px;
+    margin-top: 30px;
+  }
+
+  /* 24.12.19 수정 - 추가 */
+  .page-numbers {
+    gap: 12px;
+  }
+
+  /* 24.12.19 수정 - 추가 */
+  .page-number {
+    width: 30px;
+    height: 30px;
+  }
+}
