@@ -7,9 +7,10 @@ Lezuro는 **골프룸 예약 및 대회 참가 관리 플랫폼**입니다.
 ---
 
 ## 📸 Screenshots
-<!-- 이미지가 있다면 경로를 교체하세요 -->
-<!-- ![Lezuro Main](./docs/screenshot-main.png) -->
-<!-- ![Reservation Flow](./docs/screenshot-reservation.png) -->
+<img width="777" height="446" alt="4" src="https://github.com/user-attachments/assets/a5705b83-b6ad-481a-b038-421b61db1714" />
+<img width="845" height="527" alt="2" src="https://github.com/user-attachments/assets/1ac837ce-ebdc-4202-af66-5a2ca6ea497c" />
+<img width="627" height="603" alt="1" src="https://github.com/user-attachments/assets/25e1f25c-c62f-47ab-a8c8-c42b760c251b" />
+
 
 ---
 
@@ -53,21 +54,6 @@ Lezuro는 **골프룸 예약 및 대회 참가 관리 플랫폼**입니다.
 - **Infra/DevOps**: AWS (EC2, S3, Route53), Nginx, Docker, Jenkins (CI/CD)  
 - **Design**: Figma (UI/UX 시안, 반응형 고려)  
 - **Collaboration & Monitoring**: Slack (오류 알림, 협업)
-
----
-
-## 🧱 Architecture
-
-레저로(Lezuro) 프로젝트는 다음과 같은 구조로 구성되어 있습니다:
-
-- **Client (Vue)** ↔ **API (NestJS)** ↔ **PostgreSQL, Redis**
-- **AWS S3** : 이미지 전송 및 저장
-- **Nginx + Docker** : 배포 및 서비스 환경 관리
-- **Route53** : 도메인 라우팅
-- **Jenkins + GitHub** : CI/CD 파이프라인
-- **Slack** : 오류 알림 및 모니터링
-
-![Lezuro Architecture](./docs/lezuro-architecture.png)
 
 ---
 
