@@ -48,30 +48,36 @@ Lezuro는 **골프룸 예약 및 대회 참가 관리 플랫폼**입니다.
 
 ## 🛠 Tech Stack
 
-- **Frontend**: Vue.js, JavaScript, CSS
-- **Backend**: Spring Boot, JPA, MySQL
-- **Infra/DevOps**: AWS, Docker, (선택) GitLab/GitHub Actions CI/CD
-- **Design**: Figma (UI/UX 시안, 반응형 고려)
+- **Frontend**: Vue.js, JavaScript, CSS  
+- **Backend**: NestJS, TypeORM, PostgreSQL, Redis(예약 관리)  
+- **Infra/DevOps**: AWS (EC2, S3, Route53), Nginx, Docker, Jenkins (CI/CD)  
+- **Design**: Figma (UI/UX 시안, 반응형 고려)  
+- **Collaboration & Monitoring**: Slack (오류 알림, 협업)
 
 ---
 
 ## 🧱 Architecture
-<!-- 다이어그램이 있다면 아래 경로로 이미지 추가 -->
-<!-- ![Architecture](./docs/architecture.png) -->
 
-- **Client (Vue)** ↔ **API (Spring Boot)** ↔ **MySQL**
-- **Docker** 로 컨테이너화, **AWS** 배포
-- (선택) **S3** 정적 자산, (선택) **Slack** 오류 알림
+레저로(Lezuro) 프로젝트는 다음과 같은 구조로 구성되어 있습니다:
+
+- **Client (Vue)** ↔ **API (NestJS)** ↔ **PostgreSQL, Redis**
+- **AWS S3** : 이미지 전송 및 저장
+- **Nginx + Docker** : 배포 및 서비스 환경 관리
+- **Route53** : 도메인 라우팅
+- **Jenkins + GitHub** : CI/CD 파이프라인
+- **Slack** : 오류 알림 및 모니터링
+
+![Lezuro Architecture](./docs/lezuro-architecture.png)
 
 ---
 
 ## 🚀 Getting Started
 
 ### 1) Requirements
-- Node.js LTS / npm
-- Java 17+ / Gradle or Maven
-- MySQL 8.x
-- (선택) Docker & Docker Compose
+- Node.js LTS / npm  
+- PostgreSQL 14+  
+- Redis 7+  
+- (선택) Docker & Docker Compose  
 
 ### 2) Frontend (Vue)
 ```bash
