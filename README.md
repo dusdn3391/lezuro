@@ -63,7 +63,7 @@ Lezuro는 **골프룸 예약 및 대회 참가 관리 플랫폼**입니다.
 - Node.js LTS / npm  
 - PostgreSQL 14+  
 - Redis 7+  
-- (선택) Docker & Docker Compose  
+- Docker
 
 ### 2) Frontend (Vue)
 ```bash
